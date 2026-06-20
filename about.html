@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us | Mark Your Presence</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script src="js/tailwind-config.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Anybody:wght@700;800&family=Geist:wght@600&family=Hanken+Grotesk:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="bg-background text-on-background font-body-md">
+  <header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl shadow-sm">
+    <nav class="flex justify-between items-center px-container-margin py-4 max-w-7xl mx-auto">
+      <a href="index.html" class="flex items-center">
+        <img src="images/logo.png" alt="Mark Your Presence" class="h-11 w-auto" />
+      </a>
+      <div class="hidden lg:flex gap-md items-center text-sm">
+        <a href="about.html" data-nav class="text-primary font-bold">About Us</a>
+        <a href="know-your-rights.html" data-nav class="text-on-surface-variant hover:text-primary">Know Your Rights</a>
+        <a href="projects.html" data-nav class="text-on-surface-variant hover:text-primary">Our Projects</a>
+        <a href="register.html" data-nav class="text-on-surface-variant hover:text-primary">Register to Vote</a>
+        <a href="programs.html" data-nav class="text-on-surface-variant hover:text-primary">Work With Us</a>
+        <a href="youth-manifesto.html" data-nav class="text-on-surface-variant hover:text-primary">Youth Manifesto</a>
+        <a href="resources.html" data-nav class="text-on-surface-variant hover:text-primary">Resources</a>
+        <a href="shop.html" data-nav class="text-on-surface-variant hover:text-primary">Shop</a>
+        <a href="programs.html" class="bg-primary text-on-primary px-sm py-xs rounded-lg font-label-sm ml-2">Apply Now</a>
+      </div>
+      <button id="menu-toggle" class="lg:hidden"><span class="material-symbols-outlined">menu</span></button>
+    </nav>
+  </header>
+  <div id="menu-overlay" class="hidden fixed inset-0 bg-on-surface/50 z-[60] lg:hidden"></div>
+  <aside id="mobile-menu" class="mobile-menu fixed top-0 right-0 h-full w-[min(320px,88vw)] bg-surface z-[70] shadow-2xl overflow-y-auto lg:hidden">
+    <div class="flex justify-between items-center p-container-margin border-b border-outline-variant">
+      <span class="font-bold text-primary">MYP</span>
+      <button id="menu-close"><span class="material-symbols-outlined">close</span></button>
+    </div>
+    <nav class="p-container-margin space-y-1">
+      <a href="index.html" class="block py-3">Home</a>
+      <a href="about.html" class="block py-3 font-bold text-primary">About Us</a>
+      <a href="know-your-rights.html" class="block py-3 text-on-surface-variant">Know Your Rights</a>
+      <a href="projects.html" class="block py-3 text-on-surface-variant">Our Projects</a>
+      <a href="register.html" class="block py-3 text-on-surface-variant">Register to Vote</a>
+      <a href="programs.html" class="block py-3 text-on-surface-variant">Work With Us</a>
+      <a href="youth-manifesto.html" class="block py-3 text-on-surface-variant">Youth Manifesto</a>
+      <a href="resources.html" class="block py-3 text-on-surface-variant">Resources</a>
+      <a href="shop.html" class="block py-3 text-on-surface-variant">Shop</a>
+    </nav>
+  </aside>
+
+  <main class="pt-28 pb-32 md:pb-xl px-container-margin max-w-4xl mx-auto page-content relative">
+    <!-- Logo watermark -->
+    <img src="images/logo.png" alt="" aria-hidden="true"
+      class="pointer-events-none select-none absolute top-0 right-0 w-72 md:w-96 opacity-[0.06] -translate-y-8 translate-x-8 rotate-6"
+      style="z-index:0" />
+    <div class="relative" style="z-index:1">
+    <span class="eyebrow-orange">About Us</span>
+    <h1 class="font-display-lg text-display-lg-mobile md:text-display-lg mt-xs mb-xl section-heading orange-underline">Who We Are</h1>
+
+    <!-- Side nav pills -->
+    <div class="flex gap-xs overflow-x-auto no-scrollbar mb-xl pb-2">
+      <a href="#who-we-are" class="whitespace-nowrap px-md py-2 rounded-full bg-primary text-on-primary text-sm font-bold">Who We Are</a>
+      <a href="#our-story" class="whitespace-nowrap px-md py-2 rounded-full bg-surface-container text-on-surface-variant text-sm hover:bg-primary/10">Our Story</a>
+      <a href="#mission" class="whitespace-nowrap px-md py-2 rounded-full bg-surface-container text-on-surface-variant text-sm hover:bg-primary/10">Mission</a>
+      <a href="#structure" class="whitespace-nowrap px-md py-2 rounded-full bg-surface-container text-on-surface-variant text-sm hover:bg-primary/10">Organisation</a>
+      <a href="#team" class="whitespace-nowrap px-md py-2 rounded-full bg-surface-container text-on-surface-variant text-sm hover:bg-primary/10">Our Team</a>
+      <a href="#founder" class="whitespace-nowrap px-md py-2 rounded-full bg-surface-container text-on-surface-variant text-sm hover:bg-primary/10">Founder</a>
+    </div>
+
+    <section id="who-we-are" class="mb-xl animate-on-scroll">
+      <div class="bg-white rounded-3xl p-lg border border-outline-variant/40 shadow-sm card-orange-border">
+        <p class="text-on-surface-variant mb-md">The civil rights movements across the world changed the way we identify ourselves in today's world, making voting one of the most important precursors to shaping and reforming our present. With growing violence, poverty, climate change and need for reform in education and sciences, voting becomes our only weapon in this fight.</p>
+        <p class="text-on-surface-variant mb-md">Mark Your Presence was founded on the idea that we can create more change in our country if we work together. We are a non-profit and non-partisan organisation. Our aim is to create positive change by reaching out to the youth and every citizen on relevant issues we are negligent about.</p>
+        <p class="text-on-surface-variant mb-md">Our mission is to reach out to the youth and make them aware about the democratic process and the importance of participating in it. We believe it's important to make citizens under 18 aware, as they will be the future voters of our country. We also enrol all citizens above 18 so they can actively participate in elections.</p>
+        <p class="text-on-surface-variant">Over the last year, we have registered over 25,000 new voters. We have registered voters in Lok Sabha MP elections and MLA elections in Mumbai and Delhi. We created a voter's manual, follow up with BLO officers when there are problems, and help voters track their voter IDs, check electoral rolls, and find polling stations.</p>
+      </div>
+    </section>
+
+    <section id="our-story" class="mb-xl animate-on-scroll">
+      <h2 class="font-headline-lg section-heading mb-md orange-underline">Our Story</h2>
+      <div class="rounded-3xl p-lg border border-outline-variant/30" style="background:#FDF0EA">
+        <p class="text-on-surface-variant mb-md">Mark Your Presence was founded on the pillars of change and commitment to democracy. Chaitanya Prabhu founded the organisation in 2018 as an ode to his 100-year-old grandfather's commitment to practise the right that people of this country laid their lives for.</p>
+        <p class="text-on-surface-variant mb-md">When Chaitanya learnt that most of his friends did not have a voter ID, the 20-year-old took it upon himself to register his peers. He prepared an SOP for step-by-step registration and registered more than 350 voters within three weeks. He then founded Mark Your Presence and crowdsourced funds to create a website before the 2019 general elections.</p>
+        <p class="text-on-surface-variant">Through markyourpresence.org.in, voters can track their voter identification cards, contact details of polling stations, electoral lists, and access guides about their constituency and elected representatives. Chaitanya has filled hundreds of registration forms and conducted seminars across slums and universities while balancing law studies and national sports tournaments.</p>
+      </div>
+    </section>
+
+    <section id="mission" class="mb-xl animate-on-scroll">
+      <h2 class="font-headline-lg section-heading mb-md orange-underline">Mission</h2>
+      <div class="rounded-3xl p-lg section-orange-accent" style="background:#FDF0EA; border-left-color:#F5622A">
+        <p class="text-on-surface-variant mb-md">Our mission is to reach out to the youth and enrol all citizens above 18 so they can actively participate in elections for years to come. More than 50% of India's population is below 25, and more than 65% is below 35. Harnessing these young citizens to participate in democratic processes is essential.</p>
+        <p class="text-on-surface-variant">We run micro-targeted voter campaigns which have resulted in increased voter awareness and turnout. Our Founder has been registering and educating voters since 2018, reaching more than 16,000 voters and enabling over 10,000 young eligible voters to cast their informed vote.</p>
+      </div>
+    </section>
+
+    <section id="structure" class="mb-xl animate-on-scroll">
+      <h2 class="font-headline-lg section-heading mb-md">Organisation Structure</h2>
+      <div class="grid sm:grid-cols-2 gap-md mb-md">
+        <div class="bg-secondary-container/15 rounded-2xl p-md">
+          <span class="material-symbols-outlined text-secondary mb-sm">workspace_premium</span>
+            <h3 class="font-headline-md text-on-secondary-container mb-sm card-heading">Leadership Fellowship</h3>
+          <p class="text-on-surface-variant text-sm">Building young changemakers for voter awareness and registration.</p>
+        </div>
+        <div class="bg-tertiary-container/15 rounded-2xl p-md">
+          <span class="material-symbols-outlined text-tertiary mb-sm">gavel</span>
+            <h3 class="font-headline-md text-on-tertiary-container mb-sm card-heading">Research Fellowship</h3>
+          <p class="text-on-surface-variant text-sm">Legal research and public leadership for a student-friendly ecosystem.</p>
+        </div>
+      </div>
+      <p class="text-on-surface-variant mb-md">The team has twenty-five core members and 480 volunteers — students with a great desire to strengthen Indian democracy. The organisation and its founder have been awarded by the United Nations India, felicitated by the Ministry of Youth Affairs and Sports, and honoured with the Diana International Award.</p>
+      <ul class="space-y-sm text-on-surface-variant text-sm">
+        <li class="flex gap-xs items-start"><span class="material-symbols-outlined text-sm flex-shrink-0" style="color:#F5622A">check_circle</span> Electoral literacy clubs in colleges</li>
+        <li class="flex gap-xs items-start"><span class="material-symbols-outlined text-sm flex-shrink-0" style="color:#F5622A">check_circle</span> City-level registration with NSS &amp; Rotaract clubs</li>
+        <li class="flex gap-xs items-start"><span class="material-symbols-outlined text-sm flex-shrink-0" style="color:#F5622A">check_circle</span> Art campaigns, surveys, and voter registration competitions</li>
+        <li class="flex gap-xs items-start"><span class="material-symbols-outlined text-sm flex-shrink-0" style="color:#F5622A">check_circle</span> Register voters in 7 minutes online</li>
+      </ul>
+    </section>
+
+    <section id="team" class="mb-xl animate-on-scroll">
+      <h2 class="font-headline-lg section-heading mb-md">Our Team</h2>
+      <p class="text-on-surface-variant text-body-lg mb-xl max-w-2xl">Mark Your Presence is a student-run organisation with members from across the country and overseas.</p>
+      <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-lg">
+        <div class="bg-white rounded-3xl p-lg text-center border border-outline-variant/40 shadow-sm hover:shadow-md transition-shadow">
+          <div class="w-24 h-24 rounded-full bg-surface-container-high mx-auto mb-md flex items-center justify-center"><span class="material-symbols-outlined text-primary text-4xl">person</span></div>
+          <h3 class="font-headline-md card-heading mb-xs">Core Team</h3>
+          <p class="text-on-surface-variant text-body-md">25 members leading operations nationwide</p>
+        </div>
+        <div class="bg-white rounded-3xl p-lg text-center border border-outline-variant/40 shadow-sm hover:shadow-md transition-shadow">
+          <div class="w-24 h-24 rounded-full bg-secondary-container/30 mx-auto mb-md flex items-center justify-center"><span class="material-symbols-outlined text-secondary text-4xl">groups</span></div>
+          <h3 class="font-headline-md card-heading mb-xs">Volunteers</h3>
+          <p class="text-on-surface-variant text-body-md">480+ active volunteers across cities</p>
+        </div>
+        <div class="bg-white rounded-3xl p-lg text-center border border-outline-variant/40 shadow-sm hover:shadow-md transition-shadow sm:col-span-2 md:col-span-1">
+          <div class="w-24 h-24 rounded-full bg-tertiary-container/30 mx-auto mb-md flex items-center justify-center"><span class="material-symbols-outlined text-tertiary text-4xl">public</span></div>
+          <h3 class="font-headline-md card-heading mb-xs">Campus Ambassadors</h3>
+          <p class="text-on-surface-variant text-body-md">Student leaders in partner colleges</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="founder" class="animate-on-scroll">
+      <h2 class="font-headline-lg section-heading mb-md orange-underline">Founder</h2>
+      <div class="text-surface rounded-3xl p-lg relative overflow-hidden" style="background:#1E1E1E">
+        <div class="absolute top-0 right-0 w-40 h-40 rounded-full blur-3xl" style="background:rgba(245,98,42,0.2)"></div>
+        <div class="absolute bottom-0 left-0 w-32 h-32 rounded-full blur-2xl" style="background:rgba(245,98,42,0.15)"></div>
+        <!-- Logo as decorative background element -->
+        <img src="images/logo.png" alt="" aria-hidden="true"
+          class="absolute bottom-0 right-0 w-44 opacity-[0.12] pointer-events-none select-none translate-x-4 translate-y-4" />
+        <div class="relative z-10">
+          <h3 class="font-headline-md mb-sm card-heading" style="color:#F5622A">Chaitanya Prabhu</h3>
+          <p class="text-surface-variant mb-md">Founder of Mark Your Presence — the youngest person to have registered 20,000 voters in India. A UN awardee felicitated by UNDP and the Ministry of Youth Affairs and Sports, and recipient of the Diana Award.</p>
+          <p class="text-surface-variant mb-md">He has led campaigns including She Votes, Rap for Your Rights, Art for Your Rights, the Youth Manifesto, and Mumbai's largest civic awareness competition. He works with the Chief Electoral Officer and State Election Commission of Maharashtra.</p>
+          <p class="text-surface-variant text-sm">Lawyer · Civic rights advocate · Student activist · Master's in Public Policy, Xavier's · National-level athlete representing Maharashtra in track and field.</p>
+        </div>
+      </div>
+    </section>
+  </div><!-- /relative wrapper -->
+  </main>
+
+  <footer class="bg-on-surface py-lg px-container-margin pb-28 md:pb-lg text-center">
+    <p class="text-surface-variant text-sm">© 2024 MYP — Mark Your Presence. All rights reserved.</p>
+  </footer>
+  <nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center h-16 pb-safe bg-surface/90 backdrop-blur-xl border-t border-outline-variant">
+    <a class="flex flex-col items-center text-on-surface-variant opacity-70" href="index.html"><span class="material-symbols-outlined">home</span><span class="text-[10px]">Home</span></a>
+    <a class="flex flex-col items-center text-on-surface-variant opacity-70" href="projects.html"><span class="material-symbols-outlined">folder_managed</span><span class="text-[10px]">Projects</span></a>
+    <a class="flex flex-col items-center bg-primary-container text-on-primary-container p-2 rounded-full -translate-y-3" href="register.html"><span class="material-symbols-outlined">how_to_vote</span></a>
+    <a class="flex flex-col items-center text-on-surface-variant opacity-70" href="resources.html"><span class="material-symbols-outlined">menu_book</span><span class="text-[10px]">Resources</span></a>
+    <a class="flex flex-col items-center text-primary font-bold" href="about.html"><span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1">info</span><span class="text-[10px]">About</span></a>
+  </nav>
+  <!-- Newsletter popup -->
+  <div id="newsletter-popup" class="newsletter-popup">
+    <button id="newsletter-close" class="absolute top-3 right-3 text-outline hover:text-on-surface transition-colors"><span class="material-symbols-outlined">close</span></button>
+    <span class="material-symbols-outlined text-3xl mb-sm block" style="color:#FFBF25">mark_email_unread</span>
+    <h3 class="font-headline-md text-on-surface mb-xs" style="font-size:1.35rem">Stay in the loop!</h3>
+    <p class="text-on-surface-variant text-sm mb-md">Get civic updates, voter guides, and MYP news straight to your inbox.</p>
+    <form id="newsletter-form" class="space-y-sm">
+      <input type="email" placeholder="Your email address" required class="w-full rounded-xl border border-outline-variant px-md py-sm focus:border-primary focus:ring-1 focus:ring-primary text-sm outline-none" />
+      <button type="submit" class="w-full bg-primary text-on-primary py-sm rounded-xl font-bold text-sm hover:bg-primary-container transition-colors">Subscribe</button>
+    </form>
+  </div>
+  <button id="newsletter-trigger" title="Subscribe to newsletter" class="hidden md:flex fixed bottom-8 right-8 z-[100] items-center gap-xs bg-accent text-on-accent px-md py-sm rounded-full shadow-xl font-bold text-sm hover:scale-105 transition-transform"><span class="material-symbols-outlined text-sm">mail</span> Newsletter</button>
+  <script src="js/app.js"></script>
+</body>
+</html>

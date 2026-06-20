@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Youth Manifesto | Mark Your Presence</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script src="js/tailwind-config.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Anybody:wght@700;800&family=Geist:wght@600&family=Hanken+Grotesk:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="bg-background text-on-background font-body-md">
+  <header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl shadow-sm">
+    <nav class="flex justify-between items-center px-container-margin py-4 max-w-7xl mx-auto">
+      <a href="index.html" class="flex items-center"><img src="images/logo.png" alt="Mark Your Presence" class="h-11 w-auto" /></a>
+      <div class="hidden lg:flex gap-md items-center text-sm">
+        <a href="projects.html" class="text-on-surface-variant hover:text-primary">Our Projects</a>
+        <a href="youth-manifesto.html" data-nav class="text-primary font-bold">Youth Manifesto</a>
+        <a href="programs.html" class="text-on-surface-variant hover:text-primary">Work With Us</a>
+        <a href="register.html" class="text-on-surface-variant hover:text-primary">Register to Vote</a>
+      </div>
+      <button id="menu-toggle" class="lg:hidden"><span class="material-symbols-outlined">menu</span></button>
+    </nav>
+  </header>
+  <div id="menu-overlay" class="hidden fixed inset-0 bg-on-surface/50 z-[60] lg:hidden"></div>
+  <aside id="mobile-menu" class="mobile-menu fixed top-0 right-0 h-full w-[min(320px,88vw)] bg-surface z-[70] shadow-2xl overflow-y-auto lg:hidden">
+    <div class="flex justify-between items-center p-container-margin border-b"><img src="images/logo.png" alt="MYP" class="h-9 w-auto" /><button id="menu-close"><span class="material-symbols-outlined">close</span></button></div>
+    <nav class="p-container-margin space-y-1"><a href="youth-manifesto.html" class="block py-3 font-bold text-primary">Youth Manifesto</a></nav>
+  </aside>
+
+  <!-- Hero -->
+  <section class="relative pt-28 pb-xl overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-b from-tertiary-container/20 via-background to-background"></div>
+    <div class="relative max-w-4xl mx-auto px-container-margin text-center">
+      <span class="font-label-sm text-tertiary uppercase tracking-[0.25em]">Youth-Led Accountability</span>
+      <h1 class="font-display-lg text-display-lg-mobile md:text-display-lg mt-sm mb-md section-heading orange-underline">Youth Manifesto</h1>
+      <p class="quote-serif text-2xl md:text-3xl text-on-surface italic mb-lg">Igniting energy. Breaking barriers. Building collaboration.</p>
+      <p class="text-on-surface-variant text-body-lg max-w-2xl mx-auto">The youth manifesto movement aims to bring together long-time youth advocates, environmentalists, activists, emerging leaders, artists, policymakers, and academics — all in one city — to inspire continuous change.</p>
+    </div>
+  </section>
+
+  <main class="pb-32 md:pb-xl px-container-margin max-w-5xl mx-auto page-content">
+    <section class="mb-xl animate-on-scroll">
+      <div class="grid md:grid-cols-2 gap-md items-center">
+        <div class="rounded-3xl overflow-hidden aspect-square md:aspect-auto md:h-80 bg-cover bg-center" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuA3FUiaEXtWRLTxGPO3iFSNFQDquSSmJZXdceAuEET34jo650RPzdm93MP0zIQ9U50A4l-mvZEJwexiGfYHizbntYzK2mzUlRxl9z6NXIqQ2m28QC8EqCjHt_3ckDvYT6qRUoeSGD5yFLa5nJ5omKqBxHGpwcx4vvGs0OyZ0Wr8CqNDCC-S3ohi1wKf6EsCubmzf3QYG-O-ddEiX3V_tMqrmrhE-TTnBKo_ecJBL2jandrVR7BM0rtvDEhPq3xZKvK9Yc2-Ks8QGGEg')"></div>
+        <div>
+          <h2 class="font-headline-lg section-heading mb-md">What We Stand For</h2>
+          <p class="text-on-surface-variant mb-md">To inspire continuous change, we must invest in youth leadership and harness young people's collective power and energy. The Youth Manifesto is a space for youth-led accountability — where the next generation defines the legislative agenda through grassroots consensus.</p>
+          <p class="text-on-surface-variant">We are excited to announce the Youth Manifesto as a platform where young voices shape policy, hold leaders accountable, and build a democracy that reflects their aspirations.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-xl">
+      <h2 class="font-headline-lg section-heading mb-md text-center">Who It's For</h2>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-sm">
+        <div class="bg-white rounded-2xl p-md text-center border border-outline-variant/40">
+          <span class="material-symbols-outlined text-primary text-3xl mb-sm">eco</span>
+          <p class="font-bold text-sm">Environmentalists</p>
+        </div>
+        <div class="bg-white rounded-2xl p-md text-center border border-outline-variant/40">
+          <span class="material-symbols-outlined text-secondary text-3xl mb-sm">palette</span>
+          <p class="font-bold text-sm">Artists & Creators</p>
+        </div>
+        <div class="bg-white rounded-2xl p-md text-center border border-outline-variant/40">
+          <span class="material-symbols-outlined text-tertiary text-3xl mb-sm">policy</span>
+          <p class="font-bold text-sm">Policymakers</p>
+        </div>
+        <div class="bg-white rounded-2xl p-md text-center border border-outline-variant/40">
+          <span class="material-symbols-outlined text-primary-container text-3xl mb-sm">school</span>
+          <p class="font-bold text-sm">Academics & Students</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-on-surface text-surface rounded-3xl p-lg mb-xl text-center">
+      <h2 class="font-headline-md text-primary-fixed mb-sm">Join the Movement</h2>
+      <p class="text-surface-variant text-sm mb-md max-w-xl mx-auto">Be part of defining India's youth agenda. Register to vote, volunteer, or apply for our fellowship programs.</p>
+      <div class="flex flex-col sm:flex-row gap-sm justify-center">
+        <a href="register.html" class="bg-primary-container text-on-primary-container px-lg py-sm rounded-xl font-bold">Register to Vote</a>
+        <a href="programs.html" class="border-2 border-primary-fixed text-primary-fixed px-lg py-sm rounded-xl font-bold hover:bg-primary-fixed hover:text-on-surface transition-colors">Work With Us</a>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="font-headline-lg section-heading mb-md">Related Initiatives</h2>
+      <div class="grid sm:grid-cols-2 gap-md">
+        <a href="projects.html#rap-for-rights" class="bg-surface-container-low rounded-2xl p-md hover:bg-surface-container transition-colors flex gap-sm items-center">
+          <span class="material-symbols-outlined text-primary">mic</span>
+          <span class="font-bold text-sm">Rap for Your Rights</span>
+        </a>
+        <a href="projects.html#art-for-rights" class="bg-surface-container-low rounded-2xl p-md hover:bg-surface-container transition-colors flex gap-sm items-center">
+          <span class="material-symbols-outlined text-primary">palette</span>
+          <span class="font-bold text-sm">Art for Your Rights</span>
+        </a>
+        <a href="projects.html#write-for-rights" class="bg-surface-container-low rounded-2xl p-md hover:bg-surface-container transition-colors flex gap-sm items-center">
+          <span class="material-symbols-outlined text-primary">edit_note</span>
+          <span class="font-bold text-sm">Write for Your Rights</span>
+        </a>
+        <a href="projects.html#raise-your-voice" class="bg-surface-container-low rounded-2xl p-md hover:bg-surface-container transition-colors flex gap-sm items-center">
+          <span class="material-symbols-outlined text-primary">campaign</span>
+          <span class="font-bold text-sm">Raise Your Voice</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-on-surface py-lg px-container-margin pb-28 md:pb-lg text-center"><p class="text-surface-variant text-sm">© 2024 MYP — Mark Your Presence.</p></footer>
+  <nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around h-16 pb-safe bg-surface/90 backdrop-blur-xl border-t border-outline-variant items-center">
+    <a class="flex flex-col items-center text-on-surface-variant opacity-70" href="index.html"><span class="material-symbols-outlined">home</span></a>
+    <a class="flex flex-col items-center text-on-surface-variant opacity-70" href="projects.html"><span class="material-symbols-outlined">folder_managed</span></a>
+    <a class="flex flex-col items-center bg-primary-container p-2 rounded-full -translate-y-3" href="register.html"><span class="material-symbols-outlined">how_to_vote</span></a>
+    <a class="flex flex-col items-center text-primary font-bold" href="youth-manifesto.html"><span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1">campaign</span></a>
+    <a class="flex flex-col items-center text-on-surface-variant opacity-70" href="shop.html"><span class="material-symbols-outlined">shopping_bag</span></a>
+  </nav>
+  <!-- Newsletter popup -->
+  <div id="newsletter-popup" class="newsletter-popup">
+    <button id="newsletter-close" class="absolute top-3 right-3 text-outline hover:text-on-surface transition-colors"><span class="material-symbols-outlined">close</span></button>
+    <span class="material-symbols-outlined text-3xl mb-sm block" style="color:#FFBF25">mark_email_unread</span>
+    <h3 class="font-headline-md text-on-surface mb-xs" style="font-size:1.35rem">Stay in the loop!</h3>
+    <p class="text-on-surface-variant text-sm mb-md">Get civic updates, voter guides, and MYP news straight to your inbox.</p>
+    <form id="newsletter-form" class="space-y-sm">
+      <input type="email" placeholder="Your email address" required class="w-full rounded-xl border border-outline-variant px-md py-sm focus:border-primary focus:ring-1 focus:ring-primary text-sm outline-none" />
+      <button type="submit" class="w-full bg-primary text-on-primary py-sm rounded-xl font-bold text-sm hover:bg-primary-container transition-colors">Subscribe</button>
+    </form>
+  </div>
+  <button id="newsletter-trigger" title="Subscribe to newsletter" class="hidden md:flex fixed bottom-8 right-8 z-[100] items-center gap-xs bg-accent text-on-accent px-md py-sm rounded-full shadow-xl font-bold text-sm hover:scale-105 transition-transform"><span class="material-symbols-outlined text-sm">mail</span> Newsletter</button>
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resources | Mark Your Presence</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script src="js/tailwind-config.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Anybody:wght@700;800&family=Geist:wght@600&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="bg-background text-on-background font-body-md">
+  <header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl shadow-sm">
+    <nav class="flex justify-between items-center px-container-margin py-4 max-w-7xl mx-auto">
+      <a href="index.html" class="flex items-center"><img src="images/logo.png" alt="Mark Your Presence" class="h-11 w-auto" /></a>
+      <div class="hidden lg:flex gap-md items-center text-sm">
+        <a href="about.html" class="text-on-surface-variant hover:text-primary">About Us</a>
+        <a href="know-your-rights.html" class="text-on-surface-variant hover:text-primary">Know Your Rights</a>
+        <a href="projects.html" class="text-on-surface-variant hover:text-primary">Our Projects</a>
+        <a href="register.html" class="text-on-surface-variant hover:text-primary">Register to Vote</a>
+        <a href="programs.html" class="text-on-surface-variant hover:text-primary">Work With Us</a>
+        <a href="youth-manifesto.html" class="text-on-surface-variant hover:text-primary">Youth Manifesto</a>
+        <a href="resources.html" data-nav class="text-primary font-bold">Resources</a>
+        <a href="shop.html" class="text-on-surface-variant hover:text-primary">Shop</a>
+      </div>
+      <button id="menu-toggle" class="lg:hidden"><span class="material-symbols-outlined">menu</span></button>
+    </nav>
+  </header>
+  <div id="menu-overlay" class="hidden fixed inset-0 bg-on-surface/50 z-[60] lg:hidden"></div>
+  <aside id="mobile-menu" class="mobile-menu fixed top-0 right-0 h-full w-[min(320px,88vw)] bg-surface z-[70] shadow-2xl overflow-y-auto lg:hidden">
+    <div class="flex justify-between items-center p-container-margin border-b"><img src="images/logo.png" alt="MYP" class="h-9 w-auto" /><button id="menu-close"><span class="material-symbols-outlined">close</span></button></div>
+    <nav class="p-container-margin space-y-1">
+      <a href="index.html" class="block py-3">Home</a>
+      <a href="resources.html" class="block py-3 font-bold text-primary">Resources</a>
+      <a href="register.html" class="block py-3 text-on-surface-variant">Register to Vote</a>
+      <a href="shop.html" class="block py-3 text-on-surface-variant">Shop</a>
+    </nav>
+  </aside>
+
+  <main class="pt-28 pb-32 md:pb-xl px-container-margin max-w-7xl mx-auto page-content">
+    <header class="mb-xl">
+      <span class="eyebrow-orange">Public Knowledge Hub</span>
+      <h1 class="font-display-lg text-display-lg-mobile md:text-display-lg mt-xs mb-md section-heading orange-underline">Resources for <span class="text-primary">Civic Leaders</span></h1>
+      <p class="text-on-surface-variant text-body-lg max-w-2xl">Guides, publications, schedules, and tools to help you understand democracy and take action.</p>
+    </header>
+
+    <div class="flex gap-xs overflow-x-auto no-scrollbar mb-xl pb-2">
+      <a href="#guides" class="whitespace-nowrap px-md py-2 rounded-full bg-primary text-on-primary text-sm font-bold">Guides</a>
+      <a href="#publications" class="whitespace-nowrap px-md py-2 rounded-full bg-surface-container text-on-surface-variant text-sm hover:bg-primary/10">Publications</a>
+      <a href="#events" class="whitespace-nowrap px-md py-2 rounded-full bg-surface-container text-on-surface-variant text-sm hover:bg-primary/10">Events</a>
+      <a href="#blog" class="whitespace-nowrap px-md py-2 rounded-full bg-surface-container text-on-surface-variant text-sm hover:bg-primary/10">Blog</a>
+      <a href="#notices" class="whitespace-nowrap px-md py-2 rounded-full bg-surface-container text-on-surface-variant text-sm hover:bg-primary/10">EC Notices</a>
+    </div>
+
+    <section id="guides" class="mb-xl">
+      <h2 class="font-headline-lg section-heading mb-md flex items-center gap-xs"><span class="material-symbols-outlined text-primary">menu_book</span> Voter Guides — Maharashtra</h2>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-md">
+        <a href="https://markyourpresence.org.in" target="_blank" rel="noopener" class="group bg-white rounded-3xl p-lg border border-outline-variant/40 hover:border-primary impact-glow transition-all">
+          <span class="material-symbols-outlined text-secondary text-3xl mb-sm">account_balance</span>
+          <h3 class="font-headline-md card-heading group-hover:text-primary transition-colors">MLA Guide</h3>
+          <p class="text-on-surface-variant text-sm mt-xs">Understand your Assembly constituency and MLA's role.</p>
+          <span class="material-symbols-outlined text-primary mt-md opacity-0 group-hover:opacity-100 transition-opacity">download</span>
+        </a>
+        <a href="https://markyourpresence.org.in" target="_blank" rel="noopener" class="group bg-white rounded-3xl p-lg border border-outline-variant/40 hover:border-primary impact-glow transition-all">
+          <span class="material-symbols-outlined text-primary text-3xl mb-sm">gavel</span>
+          <h3 class="font-headline-md card-heading group-hover:text-primary transition-colors">MP Guide</h3>
+          <p class="text-on-surface-variant text-sm mt-xs">Learn about your Member of Parliament and Lok Sabha role.</p>
+          <span class="material-symbols-outlined text-primary mt-md opacity-0 group-hover:opacity-100 transition-opacity">download</span>
+        </a>
+        <a href="https://markyourpresence.org.in" target="_blank" rel="noopener" class="group bg-white rounded-3xl p-lg border border-outline-variant/40 hover:border-primary impact-glow transition-all">
+          <span class="material-symbols-outlined text-tertiary text-3xl mb-sm">location_city</span>
+          <h3 class="font-headline-md card-heading group-hover:text-primary transition-colors">BMC Guide</h3>
+          <p class="text-on-surface-variant text-sm mt-xs">Municipal governance and your Corporator explained.</p>
+          <span class="material-symbols-outlined text-primary mt-md opacity-0 group-hover:opacity-100 transition-opacity">download</span>
+        </a>
+        <a href="https://markyourpresence.org.in" target="_blank" rel="noopener" class="group bg-white rounded-3xl p-lg border border-outline-variant/40 hover:border-primary impact-glow transition-all">
+          <span class="material-symbols-outlined text-on-secondary-container text-3xl mb-sm">policy</span>
+          <h3 class="font-headline-md card-heading group-hover:text-primary transition-colors">MLC Guide</h3>
+          <p class="text-on-surface-variant text-sm mt-xs">Legislative Council and MLC responsibilities.</p>
+          <span class="material-symbols-outlined text-primary mt-md opacity-0 group-hover:opacity-100 transition-opacity">download</span>
+        </a>
+      </div>
+    </section>
+
+    <section id="publications" class="mb-xl">
+      <h2 class="font-headline-lg section-heading mb-md">Publications & Newsletters</h2>
+      <div class="grid md:grid-cols-2 gap-md">
+        <div class="bg-surface-container-low rounded-3xl p-lg border border-outline-variant/30 flex gap-md">
+          <span class="material-symbols-outlined text-primary text-4xl shrink-0">newspaper</span>
+          <div>
+            <h3 class="font-headline-md mb-xs">Your Representative</h3>
+            <p class="text-on-surface-variant text-sm mb-sm">Monthly newsletter bridging constituents and elected representatives — civic debates, accountability, and stories of young changemakers.</p>
+            <a href="projects.html#your-representative" class="text-primary font-bold text-sm flex items-center gap-xs">Learn more <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+          </div>
+        </div>
+        <div class="bg-white rounded-3xl p-lg border border-outline-variant/40 flex gap-md">
+          <span class="material-symbols-outlined text-secondary text-4xl shrink-0">description</span>
+          <div>
+            <h3 class="font-headline-md mb-xs">Voter's Manual</h3>
+            <p class="text-on-surface-variant text-sm mb-sm">Essential guide covering what to do before voting, understanding your constituency, and the roles of MP, MLA, and Corporator.</p>
+            <a href="know-your-rights.html" class="text-primary font-bold text-sm flex items-center gap-xs">Read FAQs <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="events" class="mb-xl">
+      <h2 class="font-headline-lg section-heading mb-md">Events & Schedule</h2>
+      <div class="space-y-sm">
+        <div class="bg-white rounded-2xl p-md border border-outline-variant/40 flex flex-col sm:flex-row sm:items-center justify-between gap-sm">
+          <div class="flex gap-md items-start">
+            <div class="bg-primary-container/20 rounded-xl px-sm py-xs text-center shrink-0">
+              <span class="font-bold text-primary block text-lg">Ongoing</span>
+            </div>
+            <div>
+              <h3 class="font-headline-md text-base">Democracy Drive — Campus Registration</h3>
+              <p class="text-on-surface-variant text-sm">NSS units across Mumbai University colleges</p>
+            </div>
+          </div>
+          <a href="projects.html#democracy-drive" class="text-primary font-bold text-sm whitespace-nowrap">View project →</a>
+        </div>
+        <div class="bg-white rounded-2xl p-md border border-outline-variant/40 flex flex-col sm:flex-row sm:items-center justify-between gap-sm">
+          <div class="flex gap-md items-start">
+            <div class="bg-secondary-container/30 rounded-xl px-sm py-xs text-center shrink-0">
+              <span class="font-bold text-secondary block text-lg">Rolling</span>
+            </div>
+            <div>
+              <h3 class="font-headline-md text-base">Public Meetings & Town Halls</h3>
+              <p class="text-on-surface-variant text-sm">Civic dialogue between youth and local representatives</p>
+            </div>
+          </div>
+          <a href="programs.html" class="text-primary font-bold text-sm whitespace-nowrap">Get involved →</a>
+        </div>
+        <div class="bg-white rounded-2xl p-md border border-outline-variant/40 flex flex-col sm:flex-row sm:items-center justify-between gap-sm">
+          <div class="flex gap-md items-start">
+            <div class="bg-tertiary-container/20 rounded-xl px-sm py-xs text-center shrink-0">
+              <span class="font-bold text-tertiary block text-lg">Weekly</span>
+            </div>
+            <div>
+              <h3 class="font-headline-md text-base">Mark Your Presence Podcast</h3>
+              <p class="text-on-surface-variant text-sm">With Chaitanya Prabhu — available on Spotify</p>
+            </div>
+          </div>
+          <a href="projects.html#podcast" class="text-primary font-bold text-sm whitespace-nowrap">Listen →</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="blog" class="mb-xl">
+      <h2 class="font-headline-lg section-heading mb-md">Blog & Civic Education</h2>
+      <div class="grid sm:grid-cols-3 gap-md">
+        <article class="bg-white rounded-2xl overflow-hidden border border-outline-variant/40 bento-card">
+          <div class="h-32 bg-gradient-to-br from-primary-container/30 to-surface-container"></div>
+          <div class="p-md">
+            <span class="font-label-sm text-primary uppercase text-xs">Process</span>
+            <h3 class="font-headline-md text-base mt-xs">How to Make a Voter ID</h3>
+            <p class="text-on-surface-variant text-xs mt-xs line-clamp-2">Step-by-step guide to Form 6 and online registration.</p>
+            <a href="know-your-rights.html#process" class="text-primary text-sm font-bold mt-sm inline-block">Read →</a>
+          </div>
+        </article>
+        <article class="bg-white rounded-2xl overflow-hidden border border-outline-variant/40 bento-card">
+          <div class="h-32 bg-gradient-to-br from-secondary-container/30 to-surface-container"></div>
+          <div class="p-md">
+            <span class="font-label-sm text-primary uppercase text-xs">Rights</span>
+            <h3 class="font-headline-md text-base mt-xs">Article 326 Explained</h3>
+            <p class="text-on-surface-variant text-xs mt-xs line-clamp-2">Adult suffrage and your constitutional right to vote.</p>
+            <a href="know-your-rights.html#article-326" class="text-primary text-sm font-bold mt-sm inline-block">Read →</a>
+          </div>
+        </article>
+        <article class="bg-white rounded-2xl overflow-hidden border border-outline-variant/40 bento-card">
+          <div class="h-32 bg-gradient-to-br from-tertiary-container/20 to-surface-container"></div>
+          <div class="p-md">
+            <span class="font-label-sm text-primary uppercase text-xs">Impact</span>
+            <h3 class="font-headline-md text-base mt-xs">Register in 7 Minutes</h3>
+            <p class="text-on-surface-variant text-xs mt-xs line-clamp-2">Why online registration is faster than you think.</p>
+            <a href="register.html" class="text-primary text-sm font-bold mt-sm inline-block">Register →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="notices">
+      <h2 class="font-headline-lg section-heading mb-md">Notices by the Election Commission</h2>
+      <div class="bg-on-surface text-surface rounded-3xl p-lg">
+        <p class="text-surface-variant text-sm mb-md">Stay informed about official announcements, electoral roll revisions, and voter registration deadlines from the Election Commission of India.</p>
+        <a href="https://eci.gov.in" target="_blank" rel="noopener" class="inline-flex items-center gap-xs bg-primary-container text-on-primary-container px-lg py-sm rounded-xl font-bold text-sm hover:scale-105 transition-transform">
+          Visit ECI Website <span class="material-symbols-outlined text-sm">open_in_new</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-on-surface py-lg px-container-margin pb-28 md:pb-lg text-center"><p class="text-surface-variant text-sm">© 2024 MYP — Mark Your Presence.</p></footer>
+  <nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around h-16 pb-safe bg-surface/90 backdrop-blur-xl border-t border-outline-variant items-center">
+    <a class="flex flex-col items-center text-on-surface-variant opacity-70" href="index.html"><span class="material-symbols-outlined">home</span></a>
+    <a class="flex flex-col items-center text-on-surface-variant opacity-70" href="projects.html"><span class="material-symbols-outlined">folder_managed</span></a>
+    <a class="flex flex-col items-center bg-primary-container p-2 rounded-full -translate-y-3" href="register.html"><span class="material-symbols-outlined">how_to_vote</span></a>
+    <a class="flex flex-col items-center text-primary font-bold" href="resources.html"><span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1">menu_book</span></a>
+    <a class="flex flex-col items-center text-on-surface-variant opacity-70" href="shop.html"><span class="material-symbols-outlined">shopping_bag</span></a>
+  </nav>
+  <!-- Newsletter popup -->
+  <div id="newsletter-popup" class="newsletter-popup">
+    <button id="newsletter-close" class="absolute top-3 right-3 text-outline hover:text-on-surface transition-colors"><span class="material-symbols-outlined">close</span></button>
+    <span class="material-symbols-outlined text-3xl mb-sm block" style="color:#FFBF25">mark_email_unread</span>
+    <h3 class="font-headline-md text-on-surface mb-xs" style="font-size:1.35rem">Stay in the loop!</h3>
+    <p class="text-on-surface-variant text-sm mb-md">Get civic updates, voter guides, and MYP news straight to your inbox.</p>
+    <form id="newsletter-form" class="space-y-sm">
+      <input type="email" placeholder="Your email address" required class="w-full rounded-xl border border-outline-variant px-md py-sm focus:border-primary focus:ring-1 focus:ring-primary text-sm outline-none" />
+      <button type="submit" class="w-full bg-primary text-on-primary py-sm rounded-xl font-bold text-sm hover:bg-primary-container transition-colors">Subscribe</button>
+    </form>
+  </div>
+  <button id="newsletter-trigger" title="Subscribe to newsletter" class="hidden md:flex fixed bottom-8 right-8 z-[100] items-center gap-xs bg-accent text-on-accent px-md py-sm rounded-full shadow-xl font-bold text-sm hover:scale-105 transition-transform"><span class="material-symbols-outlined text-sm">mail</span> Newsletter</button>
+  <script src="js/app.js"></script>
+</body>
+</html>

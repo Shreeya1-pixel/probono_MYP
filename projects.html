@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Projects | Mark Your Presence</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script src="js/tailwind-config.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Anybody:wght@700;800&family=Geist:wght@600&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="bg-background text-on-background font-body-md">
+
+  <!-- Header -->
+  <header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-sm border-b border-outline-variant/30">
+    <nav class="flex justify-between items-center px-container-margin py-4 max-w-7xl mx-auto">
+      <a href="index.html" class="flex items-center gap-xs">
+
+        <img src="images/logo.png" alt="Mark Your Presence" class="h-11 w-auto" />
+      </a>
+      <div class="hidden lg:flex gap-md items-center text-sm">
+        <a href="about.html"            class="text-on-surface-variant hover:text-primary transition-colors">About Us</a>
+        <a href="know-your-rights.html" class="text-on-surface-variant hover:text-primary transition-colors">Know Your Rights</a>
+        <a href="projects.html" data-nav class="text-primary font-bold border-b-2 border-primary pb-0.5">Our Projects</a>
+        <a href="register.html"         class="text-on-surface-variant hover:text-primary transition-colors">Register to Vote</a>
+        <a href="programs.html"         class="text-on-surface-variant hover:text-primary transition-colors">Work With Us</a>
+        <a href="youth-manifesto.html"  class="text-on-surface-variant hover:text-primary transition-colors">Youth Manifesto</a>
+        <a href="resources.html"        class="text-on-surface-variant hover:text-primary transition-colors">Resources</a>
+        <a href="shop.html"             class="text-on-surface-variant hover:text-primary transition-colors">Shop</a>
+        <a href="programs.html" class="bg-primary text-on-primary px-sm py-xs rounded-lg font-label-sm ml-2 hover:bg-primary-container transition-colors">Apply Now</a>
+      </div>
+      <button id="menu-toggle" class="lg:hidden text-on-surface"><span class="material-symbols-outlined">menu</span></button>
+    </nav>
+  </header>
+
+  <!-- Mobile menu -->
+  <div id="menu-overlay" class="hidden fixed inset-0 bg-on-surface/50 z-[60] lg:hidden"></div>
+  <aside id="mobile-menu" class="mobile-menu fixed top-0 right-0 h-full w-[min(320px,88vw)] bg-surface z-[70] shadow-2xl overflow-y-auto lg:hidden">
+    <div class="flex justify-between p-container-margin border-b border-outline-variant">
+      <img src="images/logo.png" alt="MYP" class="h-9 w-auto" />
+      <button id="menu-close"><span class="material-symbols-outlined">close</span></button>
+    </div>
+    <nav class="p-container-margin space-y-1">
+      <a href="index.html"           class="block py-3 text-on-surface-variant border-b border-outline-variant/30">Home</a>
+      <a href="about.html"           class="block py-3 text-on-surface-variant border-b border-outline-variant/30">About Us</a>
+      <a href="projects.html"        class="block py-3 font-bold text-primary border-b border-outline-variant/30">Our Projects</a>
+      <a href="register.html"        class="block py-3 text-on-surface-variant border-b border-outline-variant/30">Register to Vote</a>
+      <a href="programs.html"        class="block py-3 text-on-surface-variant">Work With Us</a>
+    </nav>
+  </aside>
+
+  <!-- Page hero -->
+  <section class="pt-36 pb-xl px-container-margin max-w-7xl mx-auto relative overflow-hidden">
+    <img src="images/logo.png" alt="" aria-hidden="true"
+      class="absolute right-0 top-0 w-60 opacity-[0.07] pointer-events-none select-none -translate-y-4 translate-x-4"
+      style="z-index:0" />
+    <div class="relative" style="z-index:1">
+      <span class="eyebrow-orange">Impact Gallery</span>
+      <h1 class="section-heading mb-md orange-underline">Our Projects</h1>
+      <p class="text-on-surface-variant text-body-lg max-w-2xl">Creative campaigns, civic drives, and cultural movements that bring democracy to every corner of India. Click any card to learn more.</p>
+    </div>
+  </section>
+
+  <!-- Project grid -->
+  <main class="pb-32 md:pb-xl px-container-margin max-w-7xl mx-auto page-content">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-md">
+
+      <!-- 1 Rap for Your Rights -->
+      <article class="group bg-surface-container-lowest rounded-3xl overflow-hidden border border-outline-variant/30 shadow-sm bento-card animate-on-scroll" data-modal-open="modal-rap">
+        <div class="overflow-hidden">
+          <img class="project-img" src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=600&q=80" alt="Rap for Your Rights" />
+        </div>
+        <div class="p-md">
+          <span class="badge-orange inline-block px-3 py-1 rounded-full text-[11px] font-bold uppercase mb-sm">Arts</span>
+          <h2 class="card-heading group-hover:text-primary transition-colors">Rap for Your Rights</h2>
+          <p class="text-on-surface-variant text-sm mt-xs line-clamp-2">4 Rappers, 3 Languages, 1 Mission — YOUR VOTE.</p>
+          <span class="inline-flex items-center gap-1 text-primary text-sm font-bold mt-md">Read more <span class="material-symbols-outlined text-sm">arrow_forward</span></span>
+        </div>
+      </article>
+
+      <!-- 2 She Votes -->
+      <article class="group bg-surface-container-lowest rounded-3xl overflow-hidden border border-outline-variant/30 shadow-sm bento-card animate-on-scroll" data-modal-open="modal-she-votes">
+        <div class="overflow-hidden">
+          <img class="project-img" src="https://images.unsplash.com/photo-1584820927498-cad076eece54?auto=format&fit=crop&w=600&q=80" alt="She Votes" />
+        </div>
+        <div class="p-md">
+          <span class="badge-primary inline-block px-3 py-1 rounded-full text-[11px] font-bold uppercase mb-sm">Equality</span>
+          <h2 class="card-heading group-hover:text-primary transition-colors">She Votes</h2>
+          <p class="text-on-surface-variant text-sm mt-xs line-clamp-2">Women claiming their space in public discourse and politics.</p>
+          <span class="inline-flex items-center gap-1 text-primary text-sm font-bold mt-md">Read more <span class="material-symbols-outlined text-sm">arrow_forward</span></span>
+        </div>
+      </article>
+
+      <!-- 3 Dance for Your Rights -->
+      <article class="group bg-surface-container-lowest rounded-3xl overflow-hidden border border-outline-variant/30 shadow-sm bento-card animate-on-scroll" data-modal-open="modal-dance">
+        <div class="overflow-hidden">
+          <img class="project-img" src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=600&q=80" alt="Dance for Your Rights" />
+        </div>
+        <div class="p-md">
+          <span class="badge-blue inline-block px-3 py-1 rounded-full text-[11px] font-bold uppercase mb-sm">Performing Arts</span>
+          <h2 class="card-heading group-hover:text-secondary transition-colors">Dance for Your Rights</h2>
+          <p class="text-on-surface-variant text-sm mt-xs line-clamp-2">100 dancers channelling movement to paint the message of voting.</p>
+          <span class="inline-flex items-center gap-1 text-primary text-sm font-bold mt-md">Read more <span class="material-symbols-outlined text-sm">arrow_forward</span></span>
+        </div>
+      </article>
+
+      <!-- 4 Democracy Class / Drive — wide -->
+      <article class="group bg-surface-container-lowest rounded-3xl overflow-hidden border border-outline-variant/30 shadow-sm bento-card sm:col-span-2 animate-on-scroll" data-modal-open="modal-democracy">
+        <div class="overflow-hidden relative">
+          <img class="project-img aspect-[16/7]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAV91DsBFd-qLhUn4NHy8l1UxcA-8PrMDLjg-yD3eX4Z18yMAQIkEv2Jw5cn_tZ5GAn2O1MN2WWX3qzKWSvTNxHCriSiTvzLjxcYskVPd6vqKVlnm7piRWsoc36XxJLaqoE7M-wUio8oxv55AsS-3V6gkSYQA36MAE2_Zd8TnnDUVnfbwB-yzOi6DzD-RIqeVbvTW5czdBY-2qKKpGIlSzmz5EDNnNQv4JDmtyzIxXdkRjPjuNSvRrNjLR89Nojl1A_309WhsnpVpWS" alt="Democracy Drive" style="aspect-ratio:16/7" />
+          <div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 to-transparent flex items-end p-lg">
+            <div>
+              <span class="badge-accent inline-block px-3 py-1 rounded-full text-[11px] font-bold uppercase mb-sm">Flagship</span>
+              <h2 class="card-heading text-white text-3xl">Democracy Class / Drive</h2>
+              <p class="text-white/80 text-sm mt-xs max-w-xl">Largest city-wide drive: 56 colleges, 480 volunteers, NSS Mumbai University.</p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 5 Art for Your Rights -->
+      <article class="group bg-surface-container-lowest rounded-3xl overflow-hidden border border-outline-variant/30 shadow-sm bento-card animate-on-scroll" data-modal-open="modal-art">
+        <div class="overflow-hidden">
+          <img class="project-img" src="https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?auto=format&fit=crop&w=600&q=80" alt="Art for Your Rights" />
+        </div>
+        <div class="p-md">
+          <span class="badge-orange inline-block px-3 py-1 rounded-full text-[11px] font-bold uppercase mb-sm">Visual Arts</span>
+          <h2 class="card-heading group-hover:text-primary transition-colors">Art for Your Rights</h2>
+          <p class="text-on-surface-variant text-sm mt-xs line-clamp-2">Connecting voting to art — oil, sketching, digital, sculptures.</p>
+          <span class="inline-flex items-center gap-1 text-primary text-sm font-bold mt-md">Read more <span class="material-symbols-outlined text-sm">arrow_forward</span></span>
+        </div>
+      </article>
+
+      <!-- 6 Write for Your Rights -->
+      <article class="group bg-surface-container-lowest rounded-3xl overflow-hidden border border-outline-variant/30 shadow-sm bento-card animate-on-scroll" data-modal-open="modal-write">
+        <div class="overflow-hidden">
+          <img class="project-img" src="https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=600&q=80" alt="Write for Your Rights" />
+        </div>
+        <div class="p-md">
+          <span class="badge-blue inline-block px-3 py-1 rounded-full text-[11px] font-bold uppercase mb-sm">Writing</span>
+          <h2 class="card-heading">Write for Your Rights</h2>
+          <p class="text-on-surface-variant text-sm mt-xs line-clamp-2">Freedom of expression as the most important pillar of democracy.</p>
+          <span class="inline-flex items-center gap-1 text-primary text-sm font-bold mt-md">Read more <span class="material-symbols-outlined text-sm">arrow_forward</span></span>
+        </div>
+      </article>
+
+      <!-- 7 Speak for Your Rights -->
+      <article class="group bg-surface-container-lowest rounded-3xl overflow-hidden border border-outline-variant/30 shadow-sm bento-card animate-on-scroll" data-modal-open="modal-speak">
+        <div class="overflow-hidden">
+          <img class="project-img" src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=600&q=80" alt="Speak for Your Rights" />
+        </div>
+        <div class="p-md">
+          <span class="badge-primary inline-block px-3 py-1 rounded-full text-[11px] font-bold uppercase mb-sm">Oratory</span>
+          <h2 class="card-heading">Speak for Your Rights</h2>
+          <p class="text-on-surface-variant text-sm mt-xs line-clamp-2">Giving voice to those who want to speak up about civic rights.</p>
+          <span class="inline-flex items-center gap-1 text-primary text-sm font-bold mt-md">Read more <span class="material-symbols-outlined text-sm">arrow_forward</span></span>
+        </div>
+      </article>
+
+      <!-- 8 Podcast -->
+      <article class="group bg-surface-container-lowest rounded-3xl overflow-hidden border border-outline-variant/30 shadow-sm bento-card animate-on-scroll" data-modal-open="modal-podcast">
+        <div class="overflow-hidden">
+          <img class="project-img" src="https://images.unsplash.com/photo-1478737270197-233a34e78d57?auto=format&fit=crop&w=600&q=80" alt="Podcast" />
+        </div>
+        <div class="p-md">
+          <span class="badge-accent inline-block px-3 py-1 rounded-full text-[11px] font-bold uppercase mb-sm">Podcast</span>
+          <h2 class="card-heading">Mark Your Presence with Chaitanya Prabhu</h2>
+          <p class="text-on-surface-variant text-sm mt-xs line-clamp-2">Weekly deep-dive into democracy and how voters can strengthen it.</p>
+          <span class="inline-flex items-center gap-1 text-primary text-sm font-bold mt-md">Listen on Spotify <span class="material-symbols-outlined text-sm">arrow_forward</span></span>
+        </div>
+      </article>
+
+      <!-- 9 Your Representative -->
+      <article class="group bg-surface-container-lowest rounded-3xl overflow-hidden border border-outline-variant/30 shadow-sm bento-card animate-on-scroll" data-modal-open="modal-newsletter">
+        <div class="overflow-hidden">
+          <img class="project-img" src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=600&q=80" alt="Your Representative" />
+        </div>
+        <div class="p-md">
+          <span class="badge-blue inline-block px-3 py-1 rounded-full text-[11px] font-bold uppercase mb-sm">Newsletter</span>
+          <h2 class="card-heading">Your Representative</h2>
+          <p class="text-on-surface-variant text-sm mt-xs line-clamp-2">Monthly newsletter bridging constituents and elected representatives.</p>
+          <span class="inline-flex items-center gap-1 text-primary text-sm font-bold mt-md">Read more <span class="material-symbols-outlined text-sm">arrow_forward</span></span>
+        </div>
+      </article>
+
+      <!-- 10 Hakkachi Paali -->
+      <article class="group bg-surface-container-lowest rounded-3xl overflow-hidden border border-outline-variant/30 shadow-sm bento-card animate-on-scroll" data-modal-open="modal-hakkachi">
+        <div class="overflow-hidden">
+          <img class="project-img" src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=600&q=80" alt="Hakkachi Paali" />
+        </div>
+        <div class="p-md">
+          <span class="badge-primary inline-block px-3 py-1 rounded-full text-[11px] font-bold uppercase mb-sm">Regional</span>
+          <h2 class="card-heading">Hakkachi Paali</h2>
+          <p class="text-on-surface-variant text-sm mt-xs line-clamp-2">Voter awareness and civic engagement for local communities.</p>
+          <span class="inline-flex items-center gap-1 text-primary text-sm font-bold mt-md">Read more <span class="material-symbols-outlined text-sm">arrow_forward</span></span>
+        </div>
+      </article>
+
+      <!-- 11 Books for All -->
+      <article class="group bg-surface-container-lowest rounded-3xl overflow-hidden border border-outline-variant/30 shadow-sm bento-card animate-on-scroll" data-modal-open="modal-books">
+        <div class="overflow-hidden">
+          <img class="project-img" src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&w=600&q=80" alt="Books for All" />
+        </div>
+        <div class="p-md">
+          <span class="badge-accent inline-block px-3 py-1 rounded-full text-[11px] font-bold uppercase mb-sm">Education</span>
+          <h2 class="card-heading">Books for All</h2>
+          <p class="text-on-surface-variant text-sm mt-xs line-clamp-2">Donate educational books to students who cannot afford them.</p>
+          <span class="inline-flex items-center gap-1 text-primary text-sm font-bold mt-md">Donate now <span class="material-symbols-outlined text-sm">arrow_forward</span></span>
+        </div>
+      </article>
+
+      <!-- 12 Youth Manifesto / Policy Program -->
+      <article class="group bg-surface-container-lowest rounded-3xl overflow-hidden border border-outline-variant/30 shadow-sm bento-card animate-on-scroll" data-modal-open="modal-manifesto">
+        <div class="overflow-hidden">
+          <img class="project-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3FUiaEXtWRLTxGPO3iFSNFQDquSSmJZXdceAuEET34jo650RPzdm93MP0zIQ9U50A4l-mvZEJwexiGfYHizbntYzK2mzUlRxl9z6NXIqQ2m28QC8EqCjHt_3ckDvYT6qRUoeSGD5yFLa5nJ5omKqBxHGpwcx4vvGs0OyZ0Wr8CqNDCC-S3ohi1wKf6EsCubmzf3QYG-O-ddEiX3V_tMqrmrhE-TTnBKo_ecJBL2jandrVR7BM0rtvDEhPq3xZKvK9Yc2-Ks8QGGEg" alt="Youth Manifesto" />
+        </div>
+        <div class="p-md">
+          <span class="badge-orange inline-block px-3 py-1 rounded-full text-[11px] font-bold uppercase mb-sm">Policy</span>
+          <h2 class="card-heading">Youth Manifesto &amp; Policy Program</h2>
+          <p class="text-on-surface-variant text-sm mt-xs line-clamp-2">Youth-led accountability — igniting energy and breaking barriers.</p>
+          <span class="inline-flex items-center gap-1 text-primary text-sm font-bold mt-md">Read more <span class="material-symbols-outlined text-sm">arrow_forward</span></span>
+        </div>
+      </article>
+
+      <!-- 13 Raise Your Voice -->
+      <article class="group bg-surface-container-lowest rounded-3xl overflow-hidden border border-outline-variant/30 shadow-sm bento-card animate-on-scroll" data-modal-open="modal-raise">
+        <div class="overflow-hidden">
+          <img class="project-img" src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=600&q=80" alt="Raise Your Voice" />
+        </div>
+        <div class="p-md">
+          <span class="badge-primary inline-block px-3 py-1 rounded-full text-[11px] font-bold uppercase mb-sm">Advocacy</span>
+          <h2 class="card-heading">Raise Your Voice</h2>
+          <p class="text-on-surface-variant text-sm mt-xs line-clamp-2">Empowering citizens to speak up on issues that matter in their communities.</p>
+          <span class="inline-flex items-center gap-1 text-primary text-sm font-bold mt-md">Get involved <span class="material-symbols-outlined text-sm">arrow_forward</span></span>
+        </div>
+      </article>
+
+      <!-- 14 Run to Register -->
+      <article class="group bg-surface-container-lowest rounded-3xl overflow-hidden border border-outline-variant/30 shadow-sm bento-card animate-on-scroll" data-modal-open="modal-run">
+        <div class="overflow-hidden">
+          <img class="project-img" src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=600&q=80" alt="Run to Register" />
+        </div>
+        <div class="p-md">
+          <span class="badge-blue inline-block px-3 py-1 rounded-full text-[11px] font-bold uppercase mb-sm">Fitness + Civic</span>
+          <h2 class="card-heading">Run to Register</h2>
+          <p class="text-on-surface-variant text-sm mt-xs line-clamp-2">A fitness-meets-civic-action campaign mobilising youth on the move.</p>
+          <span class="inline-flex items-center gap-1 text-primary text-sm font-bold mt-md">Join a run <span class="material-symbols-outlined text-sm">arrow_forward</span></span>
+        </div>
+      </article>
+
+    </div><!-- /grid -->
+  </main>
+
+  <!-- ─────────────────────────  MODALS  ───────────────────────── -->
+
+  <!-- Modal: Rap for Your Rights -->
+  <div id="modal-rap" class="modal-backdrop">
+    <div class="modal-box">
+      <button class="modal-close"><span class="material-symbols-outlined" style="font-size:18px">close</span></button>
+      <img class="modal-img" src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=800&q=80" alt="Rap for Your Rights" />
+      <div class="p-lg">
+        <span class="badge-orange inline-block px-3 py-1 rounded-full text-[11px] font-bold uppercase mb-sm">Arts</span>
+        <h2 class="card-heading mb-md">Rap for Your Rights</h2>
+        <p class="text-on-surface-variant mb-md">4 Rappers · 3 Languages · 1 Mission · 1 Aim — YOUR VOTE</p>
+        <p class="text-on-surface-variant text-sm mb-md">Mark Your Presence organised the first ever apolitical rap campaign in Mumbai to encourage young people across the city to register and cast their votes. Four young rappers from the slums of Mumbai collaborated with the organisation to conceive <strong>VOTE KARA, MATDAAN KAR, PEHLA VOTE PEHLA PYAAR, DON'T WASTE YOUR VOTES</strong>.</p>
+        <p class="text-on-surface-variant text-sm mb-lg">The performances were well received both offline and online, especially by the youth. The event at Khar Social, Mumbai was inaugurated by Chief Editor of Rolling Stones India, Nirmika Singh in 2019.</p>
+        <a href="programs.html" class="inline-flex items-center gap-xs bg-primary text-on-primary px-lg py-sm rounded-xl font-bold hover:bg-primary-container transition-colors">Get Involved <span class="material-symbols-outlined">arrow_forward</span></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: She Votes -->
+  <div id="modal-she-votes" class="modal-backdrop">
+    <div class="modal-box">
+      <button class="modal-close"><span class="material-symbols-outlined" style="font-size:18px">close</span></button>
+      <img class="modal-img" src="https://images.unsplash.com/photo-1584820927498-cad076eece54?auto=format&fit=crop&w=800&q=80" alt="She Votes" />
+      <div class="p-lg">
+        <span class="badge-primary inline-block px-3 py-1 rounded-full text-[11px] font-bold uppercase mb-sm">Equality</span>
+        <h2 class="card-heading mb-md">She Votes</h2>
+        <p class="text-on-surface-variant text-sm mb-lg">Mark Your Presence is committed to a progressive democracy where voices are heard and change is possible. We are well aware of the disparities in public discourse based on various parameters in society. The commitment to equality gave way to the campaign <strong>'She Votes'</strong> focussing on the role of women and the importance of their vote.</p>
+        <p class="text-on-surface-variant text-sm mb-lg">This was the third campaign launched by the organisation and focused on encouraging women to not only vote but claim their space in public discourses and politics.</p>
+        <a href="register.html" class="inline-flex items-center gap-xs bg-primary text-on-primary px-lg py-sm rounded-xl font-bold hover:bg-primary-container transition-colors">Register to Vote <span class="material-symbols-outlined">arrow_forward</span></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Dance for Your Rights -->
+  <div id="modal-dance" class="modal-backdrop">
+    <div class="modal-box">
+      <button class="modal-close"><span class="material-symbols-outlined" style="font-size:18px">close</span></button>
+      <img class="modal-img" src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=800&q=80" alt="Dance for Your Rights" />
+      <div class="p-lg">
+        <span class="badge-blue inline-block px-3 py-1 rounded-full text-[11px] font-bold uppercase mb-sm">Performing Arts</span>
+        <h2 class="card-heading mb-md">Dance for Your Rights</h2>
+        <p class="text-on-surface-variant text-sm mb-lg">After a successful campaign using performing art as a medium to communicate the importance of the vote, Mark Your Presence brought together <strong>100 dancers from across the city</strong> to channelise their medium of movement to paint the message of voting and its importance.</p>
+        <p class="text-on-surface-variant text-sm mb-lg">The aim of the campaign was to engage young people and diversify the approach to advocating for voting and registering to do the same.</p>
+        <a href="programs.html" class="inline-flex items-center gap-xs bg-secondary text-on-secondary px-lg py-sm rounded-xl font-bold">Get Involved <span class="material-symbols-outlined">arrow_forward</span></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Democracy Drive -->
+  <div id="modal-democracy" class="modal-backdrop">
+    <div class="modal-box">
+      <button class="modal-close"><span class="material-symbols-outlined" style="font-size:18px">close</span></button>
+      <img class="modal-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAV91DsBFd-qLhUn4NHy8l1UxcA-8PrMDLjg-yD3eX4Z18yMAQIkEv2Jw5cn_tZ5GAn2O1MN2WWX3qzKWSvTNxHCriSiTvzLjxcYskVPd6vqKVlnm7piRWsoc36XxJLaqoE7M-wUio8oxv55AsS-3V6gkSYQA36MAE2_Zd8TnnDUVnfbwB-yzOi6DzD-RIqeVbvTW5czdBY-2qKKpGIlSzmz5EDNnNQv4JDmtyzIxXdkRjPjuNSvRrNjLR89Nojl1A_309WhsnpVpWS" alt="Democracy Drive" />
+      <div class="p-lg">
+        <span class="badge-accent inline-block px-3 py-1 rounded-full text-[11px] font-bold uppercase mb-sm">Flagship</span>
+        <h2 class="card-heading mb-md">Democracy Class / Drive</h2>
+        <p class="text-on-surface-variant text-sm mb-md">The Democracy drive is a testimony to the vision of Mark Your Presence: to disseminate information on voting and its importance. The mission of the campaign was to register young and coming voters by visiting colleges and engaging them to increase electoral participation in the city of Mumbai.</p>
+        <p class="text-on-surface-variant text-sm mb-lg">Mark Your Presence launched the largest drive of the city with <strong>NSS units Mumbai University — over 56 colleges and 480 volunteers</strong> registering voters. This drive was launched for inclusion in SSR.</p>
+        <div class="grid grid-cols-3 gap-sm mb-lg">
+          <div class="bg-surface-container-low rounded-xl p-sm text-center"><p class="font-bold text-primary text-xl">56</p><p class="text-xs text-on-surface-variant">Colleges</p></div>
+          <div class="bg-surface-container-low rounded-xl p-sm text-center"><p class="font-bold text-primary text-xl">480</p><p class="text-xs text-on-surface-variant">Volunteers</p></div>
+          <div class="bg-surface-container-low rounded-xl p-sm text-center"><p class="font-bold text-primary text-xl">25K+</p><p class="text-xs text-on-surface-variant">Registered</p></div>
+        </div>
+        <a href="register.html" class="inline-flex items-center gap-xs bg-primary text-on-primary px-lg py-sm rounded-xl font-bold hover:bg-primary-container transition-colors">Register Now <span class="material-symbols-outlined">arrow_forward</span></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Art for Your Rights -->
+  <div id="modal-art" class="modal-backdrop">
+    <div class="modal-box">
+      <button class="modal-close"><span class="material-symbols-outlined" style="font-size:18px">close</span></button>
+      <img class="modal-img" src="https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?auto=format&fit=crop&w=800&q=80" alt="Art for Your Rights" />
+      <div class="p-lg">
+        <span class="badge-orange inline-block px-3 py-1 rounded-full text-[11px] font-bold uppercase mb-sm">Visual Arts</span>
+        <h2 class="card-heading mb-md">Art for Your Rights</h2>
+        <p class="text-on-surface-variant text-sm mb-md">With this art movement we connected voting to art and democracy so as to try to communicate our message to the public at large. The idea is to connect art and culture as a way to express our views.</p>
+        <p class="text-on-surface-variant text-sm mb-md">There are a lot of people who are not vocal about their rights but are extremely efficient at expressing their feelings through art. Forms of art accepted: <strong>Oil/Acrylic on canvas · Sketching · Graphically represented art and sculptures · Digital art forms</strong>.</p>
+        <p class="text-on-surface-variant text-sm mb-lg">The best artwork will be awarded by the CEO's office.</p>
+        <a href="programs.html" class="inline-flex items-center gap-xs bg-primary text-on-primary px-lg py-sm rounded-xl font-bold hover:bg-primary-container transition-colors">Submit Your Art <span class="material-symbols-outlined">arrow_forward</span></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Write for Your Rights -->
+  <div id="modal-write" class="modal-backdrop">
+    <div class="modal-box">
+      <button class="modal-close"><span class="material-symbols-outlined" style="font-size:18px">close</span></button>
+      <img class="modal-img" src="https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=800&q=80" alt="Write for Your Rights" />
+      <div class="p-lg">
+        <span class="badge-blue inline-block px-3 py-1 rounded-full text-[11px] font-bold uppercase mb-sm">Writing</span>
+        <h2 class="card-heading mb-md">Write for Your Rights</h2>
+        <p class="text-on-surface-variant text-sm mb-lg">We are of the opinion that freedom of expression is the most important pillar of our democracy and that there are only a few who are vocal about their rights. This challenge was created for those who adapt to writing as a form of expression to express their views.</p>
+        <p class="text-on-surface-variant text-sm mb-lg">We believe writing plays an instrumental role in expressing one's thoughts and could be used to spread awareness.</p>
+        <a href="mailto:myp.register@gmail.com" class="inline-flex items-center gap-xs bg-secondary text-on-secondary px-lg py-sm rounded-xl font-bold">Submit Your Writing <span class="material-symbols-outlined">arrow_forward</span></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Speak for Your Rights -->
+  <div id="modal-speak" class="modal-backdrop">
+    <div class="modal-box">
+      <button class="modal-close"><span class="material-symbols-outlined" style="font-size:18px">close</span></button>
+      <img class="modal-img" src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800&q=80" alt="Speak for Your Rights" />
+      <div class="p-lg">
+        <span class="badge-primary inline-block px-3 py-1 rounded-full text-[11px] font-bold uppercase mb-sm">Oratory</span>
+        <h2 class="card-heading mb-md">Speak for Your Rights</h2>
+        <p class="text-on-surface-variant text-sm mb-lg">Giving voice to those who want to speak up about civic rights and democratic participation. A platform where your words become a catalyst for change.</p>
+        <a href="programs.html" class="inline-flex items-center gap-xs bg-primary text-on-primary px-lg py-sm rounded-xl font-bold hover:bg-primary-container transition-colors">Participate <span class="material-symbols-outlined">arrow_forward</span></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Podcast -->
+  <div id="modal-podcast" class="modal-backdrop">
+    <div class="modal-box">
+      <button class="modal-close"><span class="material-symbols-outlined" style="font-size:18px">close</span></button>
+      <img class="modal-img" src="https://images.unsplash.com/photo-1478737270197-233a34e78d57?auto=format&fit=crop&w=800&q=80" alt="Podcast" />
+      <div class="p-lg">
+        <span class="badge-accent inline-block px-3 py-1 rounded-full text-[11px] font-bold uppercase mb-sm">Podcast · Weekly · Spotify</span>
+        <h2 class="card-heading mb-md">Mark Your Presence with Chaitanya Prabhu</h2>
+        <p class="text-on-surface-variant text-sm mb-lg">Introducing Mark Your Presence with Chaitanya Prabhu — a weekly podcast where we dive deep into what democracy means and how we as voters can strengthen Indian democracy. You can find this podcast on Spotify.</p>
+        <a href="https://open.spotify.com" target="_blank" rel="noopener" class="inline-flex items-center gap-xs bg-[#1DB954] text-white px-lg py-sm rounded-xl font-bold">Listen on Spotify <span class="material-symbols-outlined">open_in_new</span></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Your Representative -->
+  <div id="modal-newsletter" class="modal-backdrop">
+    <div class="modal-box">
+      <button class="modal-close"><span class="material-symbols-outlined" style="font-size:18px">close</span></button>
+      <img class="modal-img" src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=800&q=80" alt="Your Representative" />
+      <div class="p-lg">
+        <span class="badge-blue inline-block px-3 py-1 rounded-full text-[11px] font-bold uppercase mb-sm">Newsletter · Monthly</span>
+        <h2 class="card-heading mb-md">Your Representative</h2>
+        <p class="text-on-surface-variant text-sm mb-md">Your Representative is a monthly newsletter launched by Mark Your Presence as a platform to engage in civic debates, bridge the gap between the constituents and their elected representatives and take cognizance of the concerns of the people.</p>
+        <p class="text-on-surface-variant text-sm mb-lg">It covers the stories of young changemakers, innovators, and talented young individuals from the field of art, sports, politics. It is an initiative to build a connection between the masses and the changemakers of the city.</p>
+        <a href="resources.html#publications" class="inline-flex items-center gap-xs bg-secondary text-on-secondary px-lg py-sm rounded-xl font-bold">Read Latest Issue <span class="material-symbols-outlined">arrow_forward</span></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Hakkachi Paali -->
+  <div id="modal-hakkachi" class="modal-backdrop">
+    <div class="modal-box">
+      <button class="modal-close"><span class="material-symbols-outlined" style="font-size:18px">close</span></button>
+      <img class="modal-img" src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=800&q=80" alt="Hakkachi Paali" />
+      <div class="p-lg">
+        <span class="badge-primary inline-block px-3 py-1 rounded-full text-[11px] font-bold uppercase mb-sm">Regional Initiative</span>
+        <h2 class="card-heading mb-md">Hakkachi Paali — हक्काची पाळी</h2>
+        <p class="text-on-surface-variant text-sm mb-lg">A regional initiative bringing voter awareness and civic engagement to local communities across Maharashtra, making democracy accessible in every language and neighbourhood.</p>
+        <a href="programs.html" class="inline-flex items-center gap-xs bg-primary text-on-primary px-lg py-sm rounded-xl font-bold hover:bg-primary-container transition-colors">Get Involved <span class="material-symbols-outlined">arrow_forward</span></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Books for All -->
+  <div id="modal-books" class="modal-backdrop">
+    <div class="modal-box">
+      <button class="modal-close"><span class="material-symbols-outlined" style="font-size:18px">close</span></button>
+      <img class="modal-img" src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&w=800&q=80" alt="Books for All" />
+      <div class="p-lg">
+        <span class="badge-accent inline-block px-3 py-1 rounded-full text-[11px] font-bold uppercase mb-sm">Education</span>
+        <h2 class="card-heading mb-md">Books for All</h2>
+        <p class="text-on-surface-variant text-sm mb-md">It has come to our notice that a few students are finding it difficult to buy educational books for their respective courses due to the lack of finances. In light of these recent events, we would like to encourage every person to donate their books to help us, help them.</p>
+        <p class="text-on-surface-variant text-sm mb-lg">Kindly help by donating your old and used books. All books will be forwarded to those in need. You will be notified when a person is given your book. (Educational books or any book that you would want to donate.)</p>
+        <a href="https://forms.gle/4ucPsJ5UNC9Sbo947" target="_blank" rel="noopener" class="inline-flex items-center gap-xs bg-primary text-on-primary px-lg py-sm rounded-xl font-bold hover:bg-primary-container transition-colors">Donate Books <span class="material-symbols-outlined">open_in_new</span></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Youth Manifesto -->
+  <div id="modal-manifesto" class="modal-backdrop">
+    <div class="modal-box">
+      <button class="modal-close"><span class="material-symbols-outlined" style="font-size:18px">close</span></button>
+      <img class="modal-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3FUiaEXtWRLTxGPO3iFSNFQDquSSmJZXdceAuEET34jo650RPzdm93MP0zIQ9U50A4l-mvZEJwexiGfYHizbntYzK2mzUlRxl9z6NXIqQ2m28QC8EqCjHt_3ckDvYT6qRUoeSGD5yFLa5nJ5omKqBxHGpwcx4vvGs0OyZ0Wr8CqNDCC-S3ohi1wKf6EsCubmzf3QYG-O-ddEiX3V_tMqrmrhE-TTnBKo_ecJBL2jandrVR7BM0rtvDEhPq3xZKvK9Yc2-Ks8QGGEg" alt="Youth Manifesto" />
+      <div class="p-lg">
+        <span class="badge-orange inline-block px-3 py-1 rounded-full text-[11px] font-bold uppercase mb-sm">Policy Program</span>
+        <h2 class="card-heading mb-md">Youth Manifesto &amp; Policy Program</h2>
+        <p class="text-on-surface-variant text-sm mb-md">The youth manifesto movement is aiming to ignite energy and bring people together, break down barriers and encourage collaboration among long-time youth advocates, environmentalists, activists, emerging leaders, artists, policymakers, young leaders, politicians, and academics all in one city.</p>
+        <p class="text-on-surface-variant text-sm mb-lg">In order to inspire continuous change, we must invest in youth leadership and harness young people's collective power and energy. We are excited to announce the youth manifesto as a space for youth-led accountability.</p>
+        <a href="youth-manifesto.html" class="inline-flex items-center gap-xs bg-primary text-on-primary px-lg py-sm rounded-xl font-bold hover:bg-primary-container transition-colors">Learn More <span class="material-symbols-outlined">arrow_forward</span></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Raise Your Voice -->
+  <div id="modal-raise" class="modal-backdrop">
+    <div class="modal-box">
+      <button class="modal-close"><span class="material-symbols-outlined" style="font-size:18px">close</span></button>
+      <img class="modal-img" src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=800&q=80" alt="Raise Your Voice" />
+      <div class="p-lg">
+        <span class="badge-primary inline-block px-3 py-1 rounded-full text-[11px] font-bold uppercase mb-sm">Advocacy</span>
+        <h2 class="card-heading mb-md">Raise Your Voice</h2>
+        <p class="text-on-surface-variant text-sm mb-lg">Empowering citizens to speak up on issues that matter in their communities. A platform for civic advocacy that turns individual voices into collective action for positive change.</p>
+        <a href="programs.html" class="inline-flex items-center gap-xs bg-primary text-on-primary px-lg py-sm rounded-xl font-bold hover:bg-primary-container transition-colors">Join the Movement <span class="material-symbols-outlined">arrow_forward</span></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Run to Register -->
+  <div id="modal-run" class="modal-backdrop">
+    <div class="modal-box">
+      <button class="modal-close"><span class="material-symbols-outlined" style="font-size:18px">close</span></button>
+      <img class="modal-img" src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=800&q=80" alt="Run to Register" />
+      <div class="p-lg">
+        <span class="badge-blue inline-block px-3 py-1 rounded-full text-[11px] font-bold uppercase mb-sm">Fitness + Civic Action</span>
+        <h2 class="card-heading mb-md">Run to Register</h2>
+        <p class="text-on-surface-variant text-sm mb-lg">A fitness-meets-civic-action campaign mobilising youth to register voters on the move. Because strengthening your body and strengthening your democracy can happen at the same time.</p>
+        <a href="register.html" class="inline-flex items-center gap-xs bg-secondary text-on-secondary px-lg py-sm rounded-xl font-bold">Register to Vote <span class="material-symbols-outlined">arrow_forward</span></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-on-surface py-xl px-container-margin pb-28 md:pb-xl mt-xl">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between gap-xl">
+      <div class="max-w-xs">
+        <img src="images/logo.png" alt="Mark Your Presence" class="h-16 w-auto mb-sm brightness-0 invert opacity-90" />
+        <p class="text-surface-variant text-sm">Empowering youth to reclaim their stake in democracy through civic action and voter education.</p>
+      </div>
+      <div class="flex flex-wrap gap-lg text-sm">
+        <div class="space-y-xs">
+          <h4 class="text-white font-bold mb-sm">Pages</h4>
+          <a class="block text-surface-variant hover:text-primary-fixed" href="about.html">About Us</a>
+          <a class="block text-surface-variant hover:text-primary-fixed" href="projects.html">Our Projects</a>
+          <a class="block text-surface-variant hover:text-primary-fixed" href="programs.html">Work With Us</a>
+          <a class="block text-surface-variant hover:text-primary-fixed" href="register.html">Register to Vote</a>
+        </div>
+        <div class="space-y-xs">
+          <h4 class="text-white font-bold mb-sm">Connect</h4>
+          <a class="block text-surface-variant hover:text-primary-fixed" href="https://instagram.com" target="_blank" rel="noopener">Instagram</a>
+          <a class="block text-surface-variant hover:text-primary-fixed" href="https://twitter.com" target="_blank" rel="noopener">Twitter</a>
+          <a class="block text-surface-variant hover:text-primary-fixed" href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto mt-xl pt-lg border-t border-surface/10">
+      <p class="text-surface-variant/60 text-sm">© 2024 MYP — Mark Your Presence. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Mobile bottom nav -->
+  <nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around h-16 pb-safe bg-surface/90 backdrop-blur-xl border-t border-outline-variant items-center">
+    <a class="flex flex-col items-center text-on-surface-variant opacity-70" href="index.html"><span class="material-symbols-outlined">home</span><span class="text-[10px]">Home</span></a>
+    <a class="flex flex-col items-center text-primary font-bold" href="projects.html"><span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1">folder_managed</span><span class="text-[10px]">Projects</span></a>
+    <a class="flex flex-col items-center bg-primary text-on-primary p-2 rounded-full -translate-y-3 shadow-lg" href="register.html"><span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1">how_to_vote</span></a>
+    <a class="flex flex-col items-center text-on-surface-variant opacity-70" href="resources.html"><span class="material-symbols-outlined">menu_book</span><span class="text-[10px]">Resources</span></a>
+    <a class="flex flex-col items-center text-on-surface-variant opacity-70" href="programs.html"><span class="material-symbols-outlined">bolt</span><span class="text-[10px]">Programs</span></a>
+  </nav>
+
+  <!-- Newsletter popup -->
+  <div id="newsletter-popup" class="newsletter-popup">
+    <button id="newsletter-close" class="absolute top-3 right-3 text-outline hover:text-on-surface transition-colors"><span class="material-symbols-outlined">close</span></button>
+    <span class="material-symbols-outlined text-3xl mb-sm block" style="color:#FFBF25">mark_email_unread</span>
+    <h3 class="font-headline-md text-on-surface mb-xs" style="font-size:1.35rem">Stay in the loop!</h3>
+    <p class="text-on-surface-variant text-sm mb-md">Get civic updates, voter guides, and MYP news straight to your inbox.</p>
+    <form id="newsletter-form" class="space-y-sm">
+      <input type="email" placeholder="Your email address" required class="w-full rounded-xl border border-outline-variant px-md py-sm focus:border-primary focus:ring-1 focus:ring-primary text-sm outline-none" />
+      <button type="submit" class="w-full bg-primary text-on-primary py-sm rounded-xl font-bold text-sm hover:bg-primary-container transition-colors">Subscribe</button>
+    </form>
+  </div>
+  <button id="newsletter-trigger" title="Subscribe to newsletter"
+    class="hidden md:flex fixed bottom-8 right-8 z-[100] items-center gap-xs bg-accent text-on-accent px-md py-sm rounded-full shadow-xl font-bold text-sm hover:scale-105 transition-transform">
+    <span class="material-symbols-outlined text-sm">mail</span> Newsletter
+  </button>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

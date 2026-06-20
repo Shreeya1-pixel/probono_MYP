@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Know Your Rights | Mark Your Presence</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script src="js/tailwind-config.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Anybody:wght@700;800&family=Geist:wght@600&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="bg-background text-on-background font-body-md">
+  <header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl shadow-sm">
+    <nav class="flex justify-between items-center px-container-margin py-4 max-w-7xl mx-auto">
+      <a href="index.html" class="flex items-center"><img src="images/logo.png" alt="Mark Your Presence" class="h-11 w-auto" /></a>
+      <div class="hidden lg:flex gap-md items-center text-sm">
+        <a href="about.html" class="text-on-surface-variant hover:text-primary">About Us</a>
+        <a href="know-your-rights.html" data-nav class="text-primary font-bold">Know Your Rights</a>
+        <a href="projects.html" class="text-on-surface-variant hover:text-primary">Our Projects</a>
+        <a href="register.html" class="text-on-surface-variant hover:text-primary">Register to Vote</a>
+        <a href="programs.html" class="text-on-surface-variant hover:text-primary">Work With Us</a>
+        <a href="youth-manifesto.html" class="text-on-surface-variant hover:text-primary">Youth Manifesto</a>
+        <a href="resources.html" class="text-on-surface-variant hover:text-primary">Resources</a>
+        <a href="shop.html" class="text-on-surface-variant hover:text-primary">Shop</a>
+      </div>
+      <button id="menu-toggle" class="lg:hidden"><span class="material-symbols-outlined">menu</span></button>
+    </nav>
+  </header>
+  <div id="menu-overlay" class="hidden fixed inset-0 bg-on-surface/50 z-[60] lg:hidden"></div>
+  <aside id="mobile-menu" class="mobile-menu fixed top-0 right-0 h-full w-[min(320px,88vw)] bg-surface z-[70] shadow-2xl overflow-y-auto lg:hidden">
+    <div class="flex justify-between items-center p-container-margin border-b"><img src="images/logo.png" alt="MYP" class="h-9 w-auto" /><button id="menu-close"><span class="material-symbols-outlined">close</span></button></div>
+    <nav class="p-container-margin space-y-1">
+      <a href="index.html" class="block py-3">Home</a>
+      <a href="know-your-rights.html" class="block py-3 font-bold text-primary">Know Your Rights</a>
+      <a href="register.html" class="block py-3 text-on-surface-variant">Register to Vote</a>
+      <a href="resources.html" class="block py-3 text-on-surface-variant">Resources</a>
+    </nav>
+  </aside>
+
+  <main class="pt-28 pb-32 md:pb-xl px-container-margin max-w-4xl mx-auto page-content">
+    <span class="eyebrow-orange">Know Your Rights</span>
+    <h1 class="font-display-lg text-display-lg-mobile md:text-display-lg mt-xs mb-md section-heading">Your Vote, Your Power</h1>
+    <p class="text-on-surface-variant text-body-lg mb-xl">Understand the criteria, constitutional basis, and process of voting in India.</p>
+
+    <section id="criteria" class="mb-xl animate-on-scroll">
+      <h2 class="font-headline-lg section-heading mb-md flex items-center gap-xs"><span class="material-symbols-outlined text-primary">how_to_vote</span> Criteria of Voting</h2>
+      <div class="bg-white rounded-3xl p-lg border border-outline-variant/40 shadow-sm space-y-sm">
+        <div class="flex gap-sm"><span class="text-primary font-bold">1.</span><p>Citizen of India having attained 18 years of age.</p></div>
+        <div class="flex gap-sm"><span class="text-primary font-bold">2.</span><p>His/her name must appear in the Voting List of Assembly/Parliament elections, as the case may be.</p></div>
+        <div class="flex gap-sm"><span class="text-primary font-bold">3.</span><p>He/she must have a Voter's Identity Card. In case Voter I-Card is not there, he/she can show proof of identity acceptable to the returning officer.</p></div>
+      </div>
+      <div class="mt-md bg-tertiary-fixed/50 rounded-2xl p-md border border-tertiary-container/20">
+        <h3 class="font-headline-md mb-xs">What Happens if You Don't Vote?</h3>
+        <p class="text-on-surface-variant text-sm">If you don't vote, you have not shown preference for anyone standing in the election. You have not accessed the statutory right given to you by the constitution for the better growth of the country. We suggest <strong>NOTA voting</strong> rather than abstaining if you do not agree with any options on the ballot.</p>
+      </div>
+    </section>
+
+    <section id="article-326" class="mb-xl animate-on-scroll">
+      <h2 class="font-headline-lg section-heading mb-md">Article 326</h2>
+      <blockquote class="border-l-4 border-secondary pl-md py-sm bg-secondary-container/10 rounded-r-2xl">
+        <p class="text-on-surface-variant italic">"The elections to the House of the People and to the Legislative Assembly of every State shall be on the basis of adult suffrage; that is to say, every person who is a citizen of India and who is not less than 18 years of age on such date as may be fixed in that behalf by or under any law made by the appropriate Legislature."</p>
+      </blockquote>
+    </section>
+
+    <section id="process" class="mb-xl animate-on-scroll">
+      <h2 class="font-headline-lg section-heading mb-md">Process of Voting</h2>
+      <div class="space-y-sm">
+        <div class="flex gap-md items-start bg-surface-container-low rounded-2xl p-md">
+          <span class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold shrink-0">1</span>
+          <div><p class="font-bold mb-xs">Prepare documents</p><p class="text-on-surface-variant text-sm">Valid phone number, address proof, age proof, and personal photo (JPG format).</p></div>
+        </div>
+        <div class="flex gap-md items-start bg-surface-container-low rounded-2xl p-md">
+          <span class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold shrink-0">2</span>
+          <div><p class="font-bold mb-xs">Visit our portal</p><p class="text-on-surface-variant text-sm">Log on to <a href="https://markyourpresence.org.in" class="text-primary underline" target="_blank">markyourpresence.org.in</a> — redirected to National Voters Services Portal.</p></div>
+        </div>
+        <div class="flex gap-md items-start bg-surface-container-low rounded-2xl p-md">
+          <span class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold shrink-0">3</span>
+          <div><p class="font-bold mb-xs">Fill Form 6</p><p class="text-on-surface-variant text-sm">Click register for new voter ID, complete Form 6, upload documents, and submit.</p></div>
+        </div>
+        <div class="flex gap-md items-start bg-surface-container-low rounded-2xl p-md">
+          <span class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold shrink-0">4</span>
+          <div><p class="font-bold mb-xs">Track status</p><p class="text-on-surface-variant text-sm">Use your enrollment number on our site. Check electoral roll, polling booth, and nearest election office.</p></div>
+        </div>
+      </div>
+      <a href="register.html" class="inline-flex items-center gap-xs mt-lg bg-primary-container text-on-primary-container px-lg py-md rounded-xl font-bold impact-glow">Register Now <span class="material-symbols-outlined">arrow_forward</span></a>
+    </section>
+
+    <section id="faq" class="animate-on-scroll">
+      <h2 class="font-headline-lg section-heading mb-md">Frequently Asked Questions</h2>
+      <div class="space-y-sm">
+        <div class="bg-white rounded-2xl border border-outline-variant overflow-hidden">
+          <button data-accordion class="w-full flex justify-between items-center p-md text-left"><span class="font-headline-md text-base">What is the minimum age for enrollment?</span><span class="material-symbols-outlined arrow transition-transform">expand_more</span></button>
+          <div data-accordion-panel class="hidden px-md pb-md text-on-surface-variant text-sm">Eighteen. Reference: Article 326 of the Constitution. The qualifying date is the first day of January of the year in which the electoral roll is prepared or revised.</div>
+        </div>
+        <div class="bg-white rounded-2xl border border-outline-variant overflow-hidden">
+          <button data-accordion class="w-full flex justify-between items-center p-md text-left"><span class="font-headline-md text-base">Was 18 always the minimum voting age?</span><span class="material-symbols-outlined arrow transition-transform">expand_more</span></button>
+          <div data-accordion-panel class="hidden px-md pb-md text-on-surface-variant text-sm">No. Earlier it was 21 years. It was brought down to 18 through the 61st Amendment Act, 1988, effective from 28th March, 1989.</div>
+        </div>
+        <div class="bg-white rounded-2xl border border-outline-variant overflow-hidden">
+          <button data-accordion class="w-full flex justify-between items-center p-md text-left"><span class="font-headline-md text-base">Can a non-citizen become a voter?</span><span class="material-symbols-outlined arrow transition-transform">expand_more</span></button>
+          <div data-accordion-panel class="hidden px-md pb-md text-on-surface-variant text-sm">No. Only citizens of India who are ordinarily resident in a constituency are entitled to be registered.</div>
+        </div>
+        <div class="bg-white rounded-2xl border border-outline-variant overflow-hidden">
+          <button data-accordion class="w-full flex justify-between items-center p-md text-left"><span class="font-headline-md text-base">Can I be enrolled at more than one place?</span><span class="material-symbols-outlined arrow transition-transform">expand_more</span></button>
+          <div data-accordion-panel class="hidden px-md pb-md text-on-surface-variant text-sm">No. A person cannot be enrolled as a voter in more than one place in the same constituency or in more than one constituency.</div>
+        </div>
+        <div class="bg-white rounded-2xl border border-outline-variant overflow-hidden">
+          <button data-accordion class="w-full flex justify-between items-center p-md text-left"><span class="font-headline-md text-base">I have shifted residence. What form do I use?</span><span class="material-symbols-outlined arrow transition-transform">expand_more</span></button>
+          <div data-accordion-panel class="hidden px-md pb-md text-on-surface-variant text-sm">Same constituency: Form 8A. Different constituency: Form 6. For corrections: Form 8. For objections: Form 7.</div>
+        </div>
+        <div class="bg-white rounded-2xl border border-outline-variant overflow-hidden">
+          <button data-accordion class="w-full flex justify-between items-center p-md text-left"><span class="font-headline-md text-base">I am a tenant and my landlord objects. Can I still enroll?</span><span class="material-symbols-outlined arrow transition-transform">expand_more</span></button>
+          <div data-accordion-panel class="hidden px-md pb-md text-on-surface-variant text-sm">Yes. Getting enrolled is your statutory right. Fill Form 6 and deposit it with the ERO/AERO of your area if your name is not on the electoral roll.</div>
+        </div>
+        <div class="bg-white rounded-2xl border border-outline-variant overflow-hidden">
+          <button data-accordion class="w-full flex justify-between items-center p-md text-left"><span class="font-headline-md text-base">Who prepares electoral rolls?</span><span class="material-symbols-outlined arrow transition-transform">expand_more</span></button>
+          <div data-accordion-panel class="hidden px-md pb-md text-on-surface-variant text-sm">The Electoral Registration Officer (ERO), appointed by the Election Commission of India in consultation with State/UT Government, under Section 13B of the Representation of the People Act, 1950.</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-on-surface py-lg px-container-margin pb-28 md:pb-lg text-center"><p class="text-surface-variant text-sm">© 2024 MYP — Mark Your Presence.</p></footer>
+  <nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around h-16 pb-safe bg-surface/90 backdrop-blur-xl border-t border-outline-variant items-center">
+    <a class="flex flex-col items-center text-on-surface-variant opacity-70" href="index.html"><span class="material-symbols-outlined">home</span></a>
+    <a class="flex flex-col items-center text-primary font-bold" href="know-your-rights.html"><span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1">gavel</span></a>
+    <a class="flex flex-col items-center bg-primary-container p-2 rounded-full -translate-y-3" href="register.html"><span class="material-symbols-outlined">how_to_vote</span></a>
+    <a class="flex flex-col items-center text-on-surface-variant opacity-70" href="resources.html"><span class="material-symbols-outlined">menu_book</span></a>
+    <a class="flex flex-col items-center text-on-surface-variant opacity-70" href="about.html"><span class="material-symbols-outlined">info</span></a>
+  </nav>
+  <!-- Newsletter popup -->
+  <div id="newsletter-popup" class="newsletter-popup">
+    <button id="newsletter-close" class="absolute top-3 right-3 text-outline hover:text-on-surface transition-colors"><span class="material-symbols-outlined">close</span></button>
+    <span class="material-symbols-outlined text-3xl mb-sm block" style="color:#FFBF25">mark_email_unread</span>
+    <h3 class="font-headline-md text-on-surface mb-xs" style="font-size:1.35rem">Stay in the loop!</h3>
+    <p class="text-on-surface-variant text-sm mb-md">Get civic updates, voter guides, and MYP news straight to your inbox.</p>
+    <form id="newsletter-form" class="space-y-sm">
+      <input type="email" placeholder="Your email address" required class="w-full rounded-xl border border-outline-variant px-md py-sm focus:border-primary focus:ring-1 focus:ring-primary text-sm outline-none" />
+      <button type="submit" class="w-full bg-primary text-on-primary py-sm rounded-xl font-bold text-sm hover:bg-primary-container transition-colors">Subscribe</button>
+    </form>
+  </div>
+  <button id="newsletter-trigger" title="Subscribe to newsletter" class="hidden md:flex fixed bottom-8 right-8 z-[100] items-center gap-xs bg-accent text-on-accent px-md py-sm rounded-full shadow-xl font-bold text-sm hover:scale-105 transition-transform"><span class="material-symbols-outlined text-sm">mail</span> Newsletter</button>
+  <script src="js/app.js"></script>
+</body>
+</html>

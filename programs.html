@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Work With Us | Mark Your Presence</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script src="js/tailwind-config.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Anybody:wght@700;800&family=Geist:wght@600&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="bg-background text-on-background font-body-md">
+  <header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl shadow-sm">
+    <nav class="flex justify-between items-center px-container-margin py-4 max-w-7xl mx-auto">
+      <a href="index.html" class="flex items-center"><img src="images/logo.png" alt="Mark Your Presence" class="h-11 w-auto" /></a>
+      <div class="hidden lg:flex gap-md items-center text-sm">
+        <a href="about.html" class="text-on-surface-variant hover:text-primary">About Us</a>
+        <a href="projects.html" class="text-on-surface-variant hover:text-primary">Our Projects</a>
+        <a href="programs.html" data-nav class="text-primary font-bold">Work With Us</a>
+        <a href="register.html" class="text-on-surface-variant hover:text-primary">Register to Vote</a>
+        <a href="resources.html" class="text-on-surface-variant hover:text-primary">Resources</a>
+      </div>
+      <a href="programs.html" class="hidden lg:block bg-primary text-on-primary px-sm py-xs rounded-lg font-label-sm">Apply Now</a>
+      <button id="menu-toggle" class="lg:hidden"><span class="material-symbols-outlined">menu</span></button>
+    </nav>
+  </header>
+  <div id="menu-overlay" class="hidden fixed inset-0 bg-on-surface/50 z-[60] lg:hidden"></div>
+  <aside id="mobile-menu" class="mobile-menu fixed top-0 right-0 h-full w-[min(320px,88vw)] bg-surface z-[70] shadow-2xl overflow-y-auto lg:hidden">
+    <div class="flex justify-between items-center p-container-margin border-b"><img src="images/logo.png" alt="MYP" class="h-9 w-auto" /><button id="menu-close"><span class="material-symbols-outlined">close</span></button></div>
+    <nav class="p-container-margin space-y-1"><a href="index.html" class="block py-3">Home</a><a href="programs.html" class="block py-3 font-bold text-primary">Work With Us</a></nav>
+  </aside>
+
+  <main class="pt-28 pb-32 md:pb-xl px-container-margin max-w-7xl mx-auto page-content">
+    <section class="mb-xl text-center md:text-left">
+      <span class="eyebrow-orange">Application Hub</span>
+      <h1 class="font-display-lg text-display-lg-mobile md:text-display-lg mt-xs mb-md section-heading">Shape the Future of Civic Action.</h1>
+      <p class="text-on-surface-variant text-body-lg max-w-2xl">Select a path that aligns with your passion. Our application hub centralizes all opportunities to lead, influence policy, and serve your community.</p>
+    </section>
+
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-md items-stretch">
+      <!-- Policy Leadership -->
+      <div class="md:col-span-8 group relative overflow-hidden bg-surface-container-highest rounded-3xl p-lg border border-outline-variant flex flex-col justify-between impact-glow">
+        <div class="absolute top-0 right-0 p-lg opacity-10"><span class="material-symbols-outlined text-[100px]">gavel</span></div>
+        <div class="relative z-10">
+          <span class="inline-block bg-primary-container text-on-primary-container px-3 py-1 rounded-full font-label-sm mb-md uppercase tracking-widest">Intensive Program</span>
+          <h2 class="font-headline-lg card-heading mb-sm">Policy Leadership Program</h2>
+          <p class="text-on-surface-variant mb-lg max-w-lg">Designed for emerging leaders ready to dive deep into legislative frameworks and strategic advocacy. Tackle real-world policy challenges with expert mentorship.</p>
+          <div class="grid sm:grid-cols-2 gap-md bg-white/60 backdrop-blur-sm p-md rounded-2xl border border-white/30">
+            <div><span class="font-label-sm text-primary uppercase text-xs">Eligibility</span><p class="font-medium text-sm mt-1">Final year students or graduates (Under 30)</p></div>
+            <div><span class="font-label-sm text-primary uppercase text-xs">Format</span><p class="font-medium text-sm mt-1">Part-time, Mumbai & Delhi</p></div>
+          </div>
+        </div>
+        <div class="mt-lg flex justify-end relative z-10">
+          <a href="mailto:myp.register@gmail.com" class="bg-primary text-on-primary px-8 py-3 rounded-xl font-bold flex items-center gap-xs hover:gap-sm transition-all shadow-lg">Apply Now <span class="material-symbols-outlined">arrow_forward</span></a>
+        </div>
+      </div>
+
+      <!-- Leadership Fellowship -->
+      <div class="md:col-span-4 bg-secondary-container text-on-secondary-container rounded-3xl p-lg flex flex-col justify-between bento-card">
+        <div>
+          <span class="material-symbols-outlined text-4xl mb-md" style="font-variation-settings:'FILL' 1">workspace_premium</span>
+          <h2 class="font-headline-md card-heading mb-xs">Leadership Fellowship</h2>
+          <p class="opacity-90 text-sm mb-md">A 6-month intensive program with the Election Commission of Maharashtra for university students building a stronger democracy with educated voters.</p>
+          <ul class="space-y-sm text-sm mb-lg">
+            <li class="flex items-center gap-xs"><span class="material-symbols-outlined text-sm">check_circle</span> Community organising & impact campaigns</li>
+            <li class="flex items-center gap-xs"><span class="material-symbols-outlined text-sm">check_circle</span> Flexible, part-time in Mumbai & Delhi</li>
+            <li class="flex items-center gap-xs"><span class="material-symbols-outlined text-sm">check_circle</span> Certificates from MYP & Election Commission</li>
+          </ul>
+        </div>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdUkdEsxpEBC5UedRtk46nGPIn6uNlqrZYuXc59vLAD08AN3w/viewform" target="_blank" rel="noopener" class="w-full bg-on-secondary-container text-white py-3 rounded-xl font-bold text-center uppercase tracking-widest text-sm hover:opacity-90">Join Fellowship</a>
+      </div>
+
+      <!-- Research Fellowship -->
+      <div class="md:col-span-4 bg-on-surface text-surface rounded-3xl p-lg flex flex-col justify-between bento-card">
+        <div>
+          <span class="material-symbols-outlined text-primary-fixed text-4xl mb-md">search_insights</span>
+          <h2 class="font-headline-md card-heading mb-xs">Research Fellowship</h2>
+          <p class="text-surface-variant text-sm mb-md">Six-month legal fellowship for university students building a stronger ecosystem for students — core skills in research and public leadership.</p>
+        </div>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSf6Fv8IclG6DYXXtHFdawIhUw7OzlT7bxCglbPHrhq2Fqk60w/viewform" target="_blank" rel="noopener" class="font-bold text-primary-fixed border-b-2 border-primary-fixed/30 hover:border-primary-fixed transition-all text-sm">Apply for Legal Fellowship →</a>
+      </div>
+
+      <!-- Volunteer -->
+      <div class="md:col-span-8 grid md:grid-cols-3 gap-md bg-surface p-sm md:p-md rounded-3xl border-2 border-dashed border-outline-variant">
+        <div class="md:col-span-1 h-48 md:h-full rounded-2xl overflow-hidden">
+          <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBE4T3VmC9JAHl3DixzFWpYZI95X4rxCrWyAIDuO4zHT0Cel6teS6LTbJRH2XnhjU5vtkO8_pRQyPRA_wU8iMzUl-3xHj1_WnQiLmvb1LC4s6MIIIfR8mvCJ7CWYzThV_14fxJ90gI_dpGV0OsKMepmMLiLjAkbvqbpwa5_3qFcX_nfFztudra7lFTaog4gDFfRtEnHl03zUdDwa2xqAyRzbrLhKe6nhiqobwZTnBu3sMQnVgd7jLnPe3uuCjffn6iWgK2dyGPN67Ie" alt="Volunteers" />
+        </div>
+        <div class="md:col-span-2 flex flex-col justify-center p-md">
+          <h2 class="font-headline-lg card-heading mb-sm">Volunteer Program</h2>
+          <p class="text-on-surface-variant text-sm mb-md">Our heartbeat. Support events, communications, or logistics. Open to everyone who wants to make a difference, regardless of experience.</p>
+          <div class="flex flex-wrap gap-lg items-center justify-between">
+            <div class="flex gap-lg text-sm">
+              <div><p class="font-label-sm text-outline uppercase text-xs">Eligibility</p><p class="font-bold">Open to all, 16+</p></div>
+              <div><p class="font-label-sm text-outline uppercase text-xs">Next Cohort</p><p class="font-bold">Rolling Basis</p></div>
+            </div>
+            <a href="mailto:myp.register@gmail.com" class="border-2 border-primary text-primary px-8 py-2 rounded-xl font-bold text-sm hover:bg-primary hover:text-on-primary transition-all">Volunteer Today</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fellowship details -->
+    <section class="mt-xl">
+      <h2 class="font-headline-lg section-heading mb-lg">Leadership Fellowship — Program Structure</h2>
+      <div class="grid md:grid-cols-3 gap-md">
+        <div class="bg-white rounded-2xl p-md border border-outline-variant/40">
+          <h3 class="font-headline-md text-secondary mb-sm">Leadership</h3>
+          <ul class="text-on-surface-variant text-sm space-y-1">
+            <li>Building public narrative</li>
+            <li>Community organising</li>
+            <li>Adaptive leadership</li>
+            <li>Building & sustaining relationships</li>
+          </ul>
+        </div>
+        <div class="bg-white rounded-2xl p-md border border-outline-variant/40">
+          <h3 class="font-headline-md text-primary mb-sm">Political Systems</h3>
+          <ul class="text-on-surface-variant text-sm space-y-1">
+            <li>Systems of power</li>
+            <li>National & local political framework</li>
+            <li>Role of voting in democracy</li>
+            <li>Advocacy & youth in democracy</li>
+          </ul>
+        </div>
+        <div class="bg-white rounded-2xl p-md border border-outline-variant/40">
+          <h3 class="font-headline-md text-tertiary mb-sm">Impact Campaigns</h3>
+          <ul class="text-on-surface-variant text-sm space-y-1">
+            <li>Organising people through campaigns</li>
+            <li>Building your impact campaign</li>
+            <li>Stories of change & networks</li>
+            <li>Learning track & civic engagement</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-xl bg-surface-container rounded-3xl p-lg border border-outline-variant">
+      <h2 class="font-headline-md mb-md">How to Stand Out</h2>
+      <div class="grid sm:grid-cols-3 gap-md text-sm">
+        <div><h3 class="font-bold text-primary mb-xs">Let your passion shine</h3><p class="text-on-surface-variant">We care about dedication to our mission more than credentials.</p></div>
+        <div><h3 class="font-bold text-primary mb-xs">Be creative</h3><p class="text-on-surface-variant">Share interesting launch plans and ideas to get people engaged.</p></div>
+        <div><h3 class="font-bold text-primary mb-xs">Take your time</h3><p class="text-on-surface-variant">Thoughtful, careful applications show you care. Email <a href="mailto:myp.register@gmail.com" class="text-primary underline">myp.register@gmail.com</a>.</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-on-surface py-lg px-container-margin pb-28 md:pb-lg text-center"><p class="text-surface-variant text-sm">© 2024 MYP — Mark Your Presence.</p></footer>
+  <nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around h-16 pb-safe bg-surface/90 backdrop-blur-xl border-t border-outline-variant items-center">
+    <a class="flex flex-col items-center text-on-surface-variant opacity-70" href="index.html"><span class="material-symbols-outlined">home</span></a>
+    <a class="flex flex-col items-center text-on-surface-variant opacity-70" href="projects.html"><span class="material-symbols-outlined">folder_managed</span></a>
+    <a class="flex flex-col items-center text-primary font-bold" href="programs.html"><span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1">bolt</span></a>
+    <a class="flex flex-col items-center text-on-surface-variant opacity-70" href="resources.html"><span class="material-symbols-outlined">menu_book</span></a>
+    <a class="flex flex-col items-center bg-primary-container p-2 rounded-full -translate-y-3" href="register.html"><span class="material-symbols-outlined">how_to_vote</span></a>
+  </nav>
+  <!-- Newsletter popup -->
+  <div id="newsletter-popup" class="newsletter-popup">
+    <button id="newsletter-close" class="absolute top-3 right-3 text-outline hover:text-on-surface transition-colors"><span class="material-symbols-outlined">close</span></button>
+    <span class="material-symbols-outlined text-3xl mb-sm block" style="color:#FFBF25">workspace_premium</span>
+    <h3 class="font-headline-md text-on-surface mb-xs" style="font-size:1.35rem">Apply to MYP Programs</h3>
+    <p class="text-on-surface-variant text-sm mb-md">Email us your story and passion — we'd love to hear from you.</p>
+    <a href="mailto:myp.register@gmail.com" class="block w-full bg-primary text-on-primary py-sm rounded-xl font-bold text-sm text-center hover:bg-primary-container transition-colors">Email myp.register@gmail.com</a>
+  </div>
+
+  <script src="js/app.js"></script>
+  <script>
+    document.querySelectorAll('a[href="mailto:myp.register@gmail.com"]').forEach(el =>
+      el.addEventListener('click', () => MYP.showToast('Opening email to apply…', 'info'))
+    );
+  </script>
+</body>
+</html>

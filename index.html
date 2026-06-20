@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MYP | Mark Your Presence</title>
+  <meta name="description" content="A youth-led movement making every institution a voter-friendly campus. Register, learn, and mark your presence in Indian democracy." />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script src="js/tailwind-config.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Anybody:wght@700;800&family=Geist:wght@600&family=Hanken+Grotesk:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-primary-container selection:text-on-primary-container">
+
+  <!-- Header -->
+  <header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl shadow-sm">
+    <nav class="flex justify-between items-center px-container-margin py-4 max-w-7xl mx-auto">
+      <a href="index.html" class="flex items-center">
+        <img src="images/logo.png" alt="Mark Your Presence" class="h-11 w-auto" />
+      </a>
+      <div class="hidden lg:flex gap-md items-center text-sm">
+        <div class="nav-item relative">
+          <a href="about.html" data-nav class="text-on-surface-variant hover:text-primary transition-colors py-2">About Us</a>
+        </div>
+        <div class="nav-item relative">
+          <a href="know-your-rights.html" data-nav class="text-on-surface-variant hover:text-primary transition-colors py-2">Know Your Rights</a>
+        </div>
+        <a href="projects.html" data-nav class="text-on-surface-variant hover:text-primary transition-colors">Our Projects</a>
+        <a href="register.html" data-nav class="text-on-surface-variant hover:text-primary transition-colors">Register to Vote</a>
+        <a href="programs.html" data-nav class="text-on-surface-variant hover:text-primary transition-colors">Work With Us</a>
+        <a href="youth-manifesto.html" data-nav class="text-on-surface-variant hover:text-primary transition-colors">Youth Manifesto</a>
+        <a href="resources.html" data-nav class="text-on-surface-variant hover:text-primary transition-colors">Resources</a>
+        <a href="shop.html" data-nav class="text-on-surface-variant hover:text-primary transition-colors">Shop</a>
+        <a href="programs.html" class="bg-primary text-on-primary px-sm py-xs rounded-lg font-label-sm hover:scale-95 transition-transform ml-2">Apply Now</a>
+      </div>
+      <button id="menu-toggle" class="lg:hidden text-on-surface" aria-label="Open menu">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Mobile menu -->
+  <div id="menu-overlay" class="hidden fixed inset-0 bg-on-surface/50 z-[60] lg:hidden"></div>
+  <aside id="mobile-menu" class="mobile-menu fixed top-0 right-0 h-full w-[min(320px,88vw)] bg-surface z-[70] shadow-2xl overflow-y-auto lg:hidden">
+    <div class="flex justify-between items-center p-container-margin border-b border-outline-variant">
+      <span class="font-display-lg-mobile text-primary">MYP</span>
+      <button id="menu-close" aria-label="Close menu"><span class="material-symbols-outlined">close</span></button>
+    </div>
+    <nav class="p-container-margin space-y-1 text-body-md">
+      <a href="index.html" class="block py-3 font-bold text-primary border-b border-outline-variant/50">Home</a>
+      <a href="about.html" class="block py-3 text-on-surface-variant">About Us</a>
+      <a href="know-your-rights.html" class="block py-3 text-on-surface-variant">Know Your Rights</a>
+      <a href="projects.html" class="block py-3 text-on-surface-variant">Our Projects</a>
+      <a href="register.html" class="block py-3 text-on-surface-variant">Register to Vote</a>
+      <a href="programs.html" class="block py-3 text-on-surface-variant">Work With Us</a>
+      <a href="youth-manifesto.html" class="block py-3 text-on-surface-variant">Youth Manifesto</a>
+      <a href="resources.html" class="block py-3 text-on-surface-variant">Resources</a>
+      <a href="shop.html" class="block py-3 text-on-surface-variant">Shop</a>
+      <a href="programs.html" class="mt-4 block text-center bg-primary-container text-on-primary-container py-3 rounded-xl font-bold">Apply Now</a>
+    </nav>
+  </aside>
+
+  <!-- Hero -->
+  <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <div class="absolute inset-0 z-0">
+      <div class="absolute inset-0 hero-gradient z-10"></div>
+      <div class="w-full h-full bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCbcXok4wBXq70uGDqQyKZ7RFCMwv1Q0L9nx4Jo6GpYR--EDimsK0vbNy-BVAOzKqxGKxFrL_5yYb1FB3eS5PDHgm0sa5a9c9-bSCEXmHNXqyxoSuMM27Asy9qnqh7GE8ZkxtIgl_w3LEfJr6iHDTtLxSl942oYZDMTxpMTGwRe04fiTMQWYf88gegb6QPpWtbRUWdNjoi7ATE_iY1RMb_48yYehUnV-Kf3ImS4Bt7UB6S2YD6227ocAm77Qdi5XIZqzOE1P7gHQzwg')"></div>
+    </div>
+    <div class="relative z-20 text-center px-container-margin max-w-4xl pt-20">
+      <span class="eyebrow-orange mb-md inline-block">For Lok Sabha Elections</span>
+      <h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-white mb-sm uppercase tracking-wide section-heading">Mark Your Presence</h1>
+      <p class="text-white/90 text-body-lg mb-lg max-w-2xl mx-auto">A youth-led movement that works towards making every institution a voter-friendly campus.</p>
+
+      <p class="font-label-sm text-white/70 mb-xs uppercase tracking-widest">Election Clock</p>
+      <div class="flex justify-center gap-md mb-xl" id="election-countdown">
+        <div class="flex flex-col items-center bg-white/10 backdrop-blur-sm rounded-xl px-md py-sm min-w-[72px]">
+          <span class="font-display-lg text-primary-container text-display-lg-mobile" data-days>--</span>
+          <span class="font-label-sm text-white/70">Days</span>
+        </div>
+        <div class="flex flex-col items-center bg-white/10 backdrop-blur-sm rounded-xl px-md py-sm min-w-[72px]">
+          <span class="font-display-lg text-primary-container text-display-lg-mobile" data-hrs>--</span>
+          <span class="font-label-sm text-white/70">Hrs</span>
+        </div>
+        <div class="flex flex-col items-center bg-white/10 backdrop-blur-sm rounded-xl px-md py-sm min-w-[72px]">
+          <span class="font-display-lg text-primary-container text-display-lg-mobile" data-mins>--</span>
+          <span class="font-label-sm text-white/70">Mins</span>
+        </div>
+      </div>
+
+      <div class="flex flex-col sm:flex-row gap-sm justify-center items-center">
+        <a href="register.html" class="w-full sm:w-auto px-xl py-md rounded-xl font-headline-md hover:scale-[1.02] transition-all text-center font-bold" style="background:#F5622A;color:#fff;box-shadow:0 12px 30px rgba(245,98,42,0.4)">Get Registered</a>
+        <a href="about.html" class="w-full sm:w-auto border-2 border-white text-white px-xl py-md rounded-xl font-headline-md hover:bg-white hover:text-on-surface transition-all text-center">Know More</a>
+      </div>
+    </div>
+    <!-- Floating logo in hero -->
+    <img src="images/logo.png" alt="" aria-hidden="true"
+      class="hidden md:block absolute right-8 top-1/2 -translate-y-1/2 w-64 opacity-30 pointer-events-none select-none drop-shadow-2xl"
+      style="filter:brightness(0) invert(1);z-index:25" />
+    <div class="absolute bottom-24 md:bottom-xl left-1/2 -translate-x-1/2 animate-bounce text-white opacity-50" style="z-index:25">
+      <span class="material-symbols-outlined">keyboard_double_arrow_down</span>
+    </div>
+  </section>
+
+  <!-- Quote & Message -->
+  <section class="py-xl" style="background:#F5EDE5">
+    <div class="max-w-3xl mx-auto px-container-margin text-center animate-on-scroll">
+      <div class="big-quote"></div>
+      <h2 class="quote-serif text-4xl md:text-5xl text-on-surface mb-lg italic leading-snug font-semibold">I'm not just a voter, I'm a change maker.</h2>
+      <span class="orange-stripe mx-auto" style="max-width:80px"></span>
+      <p class="text-on-surface-variant text-body-lg mb-md">Register now, vote later. I invite you to continue the movement and discussion with us by joining Mark Your Presence. Let's keep talking about these issues and supporting one another. Everyone is welcomed.</p>
+      <p class="text-on-surface-variant text-body-md mb-md">We encourage you to visit our site and Instagram handle for more information that can help you understand the process and help us reach our goal. You can also create and join <mark class="orange">Mark Your Presence circles</mark> — small peer groups that meet in person for ongoing encouragement and development.</p>
+      <p class="text-on-surface-variant text-body-md mb-lg">My goal in this campaign is not to end the discussion and movement with the election, but to start a new beginning. Welcome to Mark Your Presence.</p>
+      <p class="font-headline-md" style="color:#F5622A">— Chaitanya Prabhu</p>
+    </div>
+  </section>
+
+  <!-- Mission & Vision -->
+  <section class="py-xl relative" style="background:#EDE5DF">
+    <div class="max-w-5xl mx-auto px-container-margin">
+      <div class="grid md:grid-cols-2 gap-md -mt-4">
+        <div class="glass-card p-lg rounded-3xl shadow-sm animate-on-scroll card-orange-border">
+          <span class="material-symbols-outlined text-3xl mb-sm" style="color:#F5622A">flag</span>
+          <h3 class="font-headline-md text-on-surface mb-sm card-heading">Our Mission</h3>
+          <p class="text-on-surface-variant">To reach out to the youth of our country and enrol all citizens above 18 so they can actively participate in elections. We make voting more interesting for young India through micro-targeted campaigns that increase awareness and turnout.</p>
+        </div>
+        <div class="glass-card p-lg rounded-3xl border-l-4 border-secondary shadow-sm md:translate-y-8 animate-on-scroll">
+          <span class="material-symbols-outlined text-secondary text-3xl mb-sm">visibility</span>
+          <h3 class="font-headline-md text-on-surface mb-sm card-heading">Our Vision</h3>
+          <p class="text-on-surface-variant">A democracy with educated, politically aware voters — where every institution becomes a voter-friendly campus and the power of youth shapes the course of our nation.</p>
+        </div>
+      </div>
+      <div class="mt-xl rounded-3xl p-lg text-center animate-on-scroll band-orange">
+        <h3 class="font-headline-md mb-sm card-heading text-white">Register Now!</h3>
+        <p class="opacity-90 max-w-2xl mx-auto text-white">The movement for a stronger democracy starts with you. Join us in making every institution voter-friendly.</p>
+        <a href="register.html" class="inline-block mt-md bg-white px-lg py-sm rounded-xl font-bold hover:scale-105 transition-transform" style="color:#B52A1A">Start Registration →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="py-xl text-surface" style="background:#1E1E1E;border-top:4px solid #F5622A">
+    <div class="max-w-7xl mx-auto px-container-margin">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-lg">
+        <div class="text-center animate-on-scroll" data-stat-link="register.html" title="Register to vote">
+          <div class="font-display-lg text-display-lg-mobile md:text-display-lg mb-xs" style="color:#F5622A">25K+</div>
+          <div class="font-label-sm uppercase" style="color:rgba(255,255,255,0.55)">Voters Registered</div>
+        </div>
+        <div class="text-center animate-on-scroll" data-stat-link="programs.html" title="Become a volunteer">
+          <div class="font-display-lg text-display-lg-mobile md:text-display-lg mb-xs" style="color:#FFBF25">480+</div>
+          <div class="font-label-sm uppercase" style="color:rgba(255,255,255,0.55)">Volunteers</div>
+        </div>
+        <div class="text-center animate-on-scroll" data-stat-link="projects.html" title="Our impact">
+          <div class="font-display-lg text-display-lg-mobile md:text-display-lg mb-xs" style="color:#B0C3FF">140+</div>
+          <div class="font-label-sm uppercase" style="color:rgba(255,255,255,0.55)">Colleges Partnered</div>
+        </div>
+        <div class="text-center animate-on-scroll" data-stat-link="about.html" title="About us">
+          <div class="font-display-lg text-display-lg-mobile md:text-display-lg mb-xs" style="color:#FFD9CC">20+</div>
+          <div class="font-label-sm uppercase" style="color:rgba(255,255,255,0.55)">Cities Covered</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects preview -->
+  <section class="py-xl page-content" id="projects" style="background:#F0EBE6">
+    <div class="max-w-7xl mx-auto px-container-margin">
+      <div class="flex flex-col md:flex-row justify-between items-end mb-lg gap-md">
+        <div>
+          <span class="eyebrow-orange">What We Do</span>
+          <h2 class="font-headline-lg section-heading md:text-display-lg-mobile orange-underline">Our Strategic Initiatives</h2>
+        </div>
+        <a href="projects.html" class="text-primary font-bold flex items-center gap-xs hover:gap-sm transition-all">View All Projects <span class="material-symbols-outlined">arrow_forward</span></a>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 md:grid-rows-2 gap-sm">
+        <a href="projects.html#democracy-drive" class="md:col-span-2 md:row-span-2 relative group overflow-hidden rounded-3xl h-[360px] md:h-auto block">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent z-10"></div>
+          <div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAV91DsBFd-qLhUn4NHy8l1UxcA-8PrMDLjg-yD3eX4Z18yMAQIkEv2Jw5cn_tZ5GAn2O1MN2WWX3qzKWSvTNxHCriSiTvzLjxcYskVPd6vqKVlnm7piRWsoc36XxJLaqoE7M-wUio8oxv55AsS-3V6gkSYQA36MAE2_Zd8TnnDUVnfbwB-yzOi6DzD-RIqeVbvTW5czdBY-2qKKpGIlSzmz5EDNnNQv4JDmtyzIxXdkRjPjuNSvRrNjLR89Nojl1A_309WhsnpVpWS')"></div>
+          <div class="absolute bottom-0 left-0 p-lg z-20">
+            <span class="bg-primary-container text-on-primary-container px-xs py-1 rounded-full text-label-sm mb-xs inline-block">FLAGSHIP</span>
+            <h3 class="font-headline-md text-white text-2xl card-heading">Democracy Class / Drive</h3>
+            <p class="text-white/80 max-w-md text-sm">Largest city-wide drive with NSS units across 56 colleges and 480 volunteers registering voters.</p>
+          </div>
+        </a>
+        <a href="programs.html" class="p-md rounded-3xl flex flex-col justify-between group transition-all bento-card" style="background:rgba(245,98,42,0.08);border:1.5px solid rgba(245,98,42,0.2)">
+          <div>
+            <span class="material-symbols-outlined text-[40px] mb-sm" style="color:#F5622A">workspace_premium</span>
+            <h3 class="font-headline-md card-heading" style="color:#B52A1A">Leadership Fellowship</h3>
+            <p class="text-on-surface-variant mt-xs text-sm">Six-month journey into grassroots mobilization and civic leadership.</p>
+          </div>
+          <span class="material-symbols-outlined self-end text-secondary opacity-0 group-hover:opacity-100 transition-opacity">north_east</span>
+        </a>
+        <a href="youth-manifesto.html" class="bg-tertiary-container/15 p-md rounded-3xl flex flex-col justify-between group hover:bg-tertiary-container/25 transition-all bento-card">
+          <div>
+            <span class="material-symbols-outlined text-tertiary text-[40px] mb-sm">campaign</span>
+            <h3 class="font-headline-md text-on-tertiary-container card-heading">Youth Manifesto</h3>
+            <p class="text-on-surface-variant mt-xs text-sm">Youth-led accountability bringing advocates, artists, and policymakers together.</p>
+          </div>
+          <span class="material-symbols-outlined self-end text-tertiary opacity-0 group-hover:opacity-100 transition-opacity">north_east</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-xl" style="background:#EDE5DF">
+    <div class="max-w-3xl mx-auto px-container-margin">
+      <div class="text-center mb-xs"><span class="eyebrow-orange">Learn More</span></div>
+      <h2 class="font-headline-lg section-heading text-center mb-xl">Common Queries</h2>
+      <div class="space-y-sm">
+        <div class="bg-white rounded-2xl shadow-sm border border-outline-variant overflow-hidden">
+          <button data-accordion class="w-full flex justify-between items-center p-md text-left">
+            <span class="font-headline-md">What is MYP?</span>
+            <span class="material-symbols-outlined arrow transition-transform">expand_more</span>
+          </button>
+          <div data-accordion-panel class="hidden px-md pb-md text-on-surface-variant">
+            Mark Your Presence is a non-profit, non-partisan organisation that registers young voters and educates them about their right to vote. We work to make every institution a voter-friendly campus.
+          </div>
+        </div>
+        <div class="bg-white rounded-2xl shadow-sm border border-outline-variant overflow-hidden">
+          <button data-accordion class="w-full flex justify-between items-center p-md text-left">
+            <span class="font-headline-md">How to register as a voter?</span>
+            <span class="material-symbols-outlined arrow transition-transform">expand_more</span>
+          </button>
+          <div data-accordion-panel class="hidden px-md pb-md text-on-surface-variant">
+            Visit <a href="https://markyourpresence.org.in" class="text-primary underline" target="_blank" rel="noopener">markyourpresence.org.in</a> to be redirected to the National Voters Services Portal. Fill Form 6 with your documents and track your status on our site.
+          </div>
+        </div>
+        <div class="bg-white rounded-2xl shadow-sm border border-outline-variant overflow-hidden">
+          <button data-accordion class="w-full flex justify-between items-center p-md text-left">
+            <span class="font-headline-md">How can I get involved?</span>
+            <span class="material-symbols-outlined arrow transition-transform">expand_more</span>
+          </button>
+          <div data-accordion-panel class="hidden px-md pb-md text-on-surface-variant">
+            Join as a volunteer, apply for our Leadership or Research Fellowship, or explore our projects. Visit <a href="programs.html" class="text-primary underline">Work With Us</a> to find your path.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-on-surface py-xl px-container-margin pb-28 md:pb-xl">
+    <div class="max-w-7xl mx-auto">
+      <div class="flex flex-col md:flex-row justify-between items-start gap-xl mb-xl">
+        <div class="max-w-xs">
+          <img src="images/logo.png" alt="Mark Your Presence" class="h-16 w-auto mb-sm brightness-0 invert opacity-90" />
+          <p class="text-surface-variant font-body-md">Empowering the youth to reclaim their stake in democracy through civic action and voter education.</p>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-lg">
+          <div class="space-y-xs">
+            <h4 class="text-white font-bold mb-sm">Info</h4>
+            <a class="block text-surface-variant hover:text-primary-fixed transition-colors" href="about.html">About Us</a>
+            <a class="block text-surface-variant hover:text-primary-fixed transition-colors" href="know-your-rights.html">Know Your Rights</a>
+            <a class="block text-surface-variant hover:text-primary-fixed transition-colors" href="register.html">Register to Vote</a>
+            <a class="block text-surface-variant hover:text-primary-fixed transition-colors" href="resources.html">Resources</a>
+          </div>
+          <div class="space-y-xs">
+            <h4 class="text-white font-bold mb-sm">Connect</h4>
+            <a class="block text-surface-variant hover:text-primary-fixed transition-colors" href="https://instagram.com" target="_blank" rel="noopener">Instagram</a>
+            <a class="block text-surface-variant hover:text-primary-fixed transition-colors" href="https://twitter.com" target="_blank" rel="noopener">Twitter</a>
+            <a class="block text-surface-variant hover:text-primary-fixed transition-colors" href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+          <div class="col-span-2 md:col-span-1">
+            <h4 class="text-white font-bold mb-sm">Newsletter</h4>
+            <div class="flex bg-surface/10 rounded-xl p-base">
+              <input class="bg-transparent border-none text-white focus:ring-0 flex-grow font-body-md px-sm placeholder:text-surface-variant" placeholder="Email" type="email" />
+              <button class="bg-primary text-on-primary px-sm py-xs rounded-lg"><span class="material-symbols-outlined">send</span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pt-lg border-t border-surface/10">
+        <p class="text-surface-variant/60 font-body-md text-center md:text-left">© 2024 MYP — Mark Your Presence. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bottom nav mobile -->
+  <nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center h-16 pb-safe px-2 bg-surface/90 backdrop-blur-xl border-t border-outline-variant shadow-[0_-4px_12px_rgba(0,0,0,0.05)]">
+    <a class="flex flex-col items-center text-primary font-bold scale-105" href="index.html">
+      <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1">home</span>
+      <span class="text-[10px] font-label-sm">Home</span>
+    </a>
+    <a class="flex flex-col items-center text-on-surface-variant opacity-70" href="projects.html">
+      <span class="material-symbols-outlined">folder_managed</span>
+      <span class="text-[10px] font-label-sm">Projects</span>
+    </a>
+    <a class="flex flex-col items-center bg-primary-container text-on-primary-container p-2 rounded-full -translate-y-3 shadow-lg" href="register.html">
+      <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1">how_to_vote</span>
+    </a>
+    <a class="flex flex-col items-center text-on-surface-variant opacity-70" href="resources.html">
+      <span class="material-symbols-outlined">menu_book</span>
+      <span class="text-[10px] font-label-sm">Resources</span>
+    </a>
+    <a class="flex flex-col items-center text-on-surface-variant opacity-70" href="shop.html">
+      <span class="material-symbols-outlined">shopping_bag</span>
+      <span class="text-[10px] font-label-sm">Shop</span>
+    </a>
+  </nav>
+
+  <!-- Newsletter popup -->
+  <div id="newsletter-popup" class="newsletter-popup">
+    <button id="newsletter-close" class="absolute top-3 right-3 text-outline hover:text-on-surface transition-colors"><span class="material-symbols-outlined">close</span></button>
+    <span class="material-symbols-outlined text-accent text-3xl mb-sm block">mark_email_unread</span>
+    <h3 class="font-headline-md text-on-surface mb-xs" style="font-size:1.35rem">Stay in the loop!</h3>
+    <p class="text-on-surface-variant text-sm mb-md">Get civic updates, voter guides, and MYP news straight to your inbox.</p>
+    <form id="newsletter-form" class="space-y-sm">
+      <input type="email" placeholder="Your email address" required class="w-full rounded-xl border border-outline-variant px-md py-sm focus:border-primary focus:ring-1 focus:ring-primary text-sm outline-none" />
+      <button type="submit" class="w-full bg-primary text-on-primary py-sm rounded-xl font-bold text-sm hover:bg-primary-container transition-colors">Subscribe — it's free</button>
+    </form>
+  </div>
+
+  <!-- Newsletter trigger pill (floating) -->
+  <button id="newsletter-trigger" title="Subscribe to newsletter"
+    class="hidden md:flex fixed bottom-8 right-8 z-[100] items-center gap-xs bg-accent text-on-accent px-md py-sm rounded-full shadow-xl font-bold text-sm hover:scale-105 transition-transform">
+    <span class="material-symbols-outlined text-sm">mail</span> Newsletter
+  </button>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register to Vote | Mark Your Presence</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script src="js/tailwind-config.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Anybody:wght@700;800&family=Geist:wght@600&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="bg-background text-on-background font-body-md">
+  <header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl shadow-sm">
+    <nav class="flex justify-between items-center px-container-margin py-4 max-w-7xl mx-auto">
+      <a href="index.html" class="flex items-center"><img src="images/logo.png" alt="Mark Your Presence" class="h-11 w-auto" /></a>
+      <div class="hidden lg:flex gap-md items-center text-sm">
+        <a href="know-your-rights.html" class="text-on-surface-variant hover:text-primary">Know Your Rights</a>
+        <a href="register.html" data-nav class="text-primary font-bold">Register to Vote</a>
+        <a href="resources.html" class="text-on-surface-variant hover:text-primary">Resources</a>
+      </div>
+      <button id="menu-toggle" class="lg:hidden"><span class="material-symbols-outlined">menu</span></button>
+    </nav>
+  </header>
+  <div id="menu-overlay" class="hidden fixed inset-0 bg-on-surface/50 z-[60] lg:hidden"></div>
+  <aside id="mobile-menu" class="mobile-menu fixed top-0 right-0 h-full w-[min(320px,88vw)] bg-surface z-[70] shadow-2xl overflow-y-auto lg:hidden">
+    <div class="flex justify-between items-center p-container-margin border-b"><img src="images/logo.png" alt="MYP" class="h-9 w-auto" /><button id="menu-close"><span class="material-symbols-outlined">close</span></button></div>
+    <nav class="p-container-margin space-y-1"><a href="register.html" class="block py-3 font-bold text-primary">Register to Vote</a></nav>
+  </aside>
+
+  <main class="pt-28 pb-32 md:pb-xl px-container-margin max-w-4xl mx-auto page-content">
+    <div class="text-center mb-xl animate-on-scroll">
+      <span class="eyebrow-orange">Register Now, Vote Later</span>
+      <h1 class="font-display-lg text-display-lg-mobile md:text-display-lg mt-xs mb-md section-heading">Mark Your Presence on the Electoral Roll</h1>
+      <p class="text-on-surface-variant text-body-lg max-w-2xl mx-auto">It takes only 7 minutes to register online. Our portal redirects you to the National Voters Services Portal and helps you track your application.</p>
+    </div>
+
+    <div class="bg-primary-container text-on-primary-container rounded-3xl p-lg text-center mb-xl impact-glow">
+      <h2 class="font-headline-md card-heading mb-sm">Ready to Register?</h2>
+      <p class="opacity-95 mb-md text-sm">You'll be redirected to the official voter registration portal.</p>
+      <a href="https://markyourpresence.org.in" target="_blank" rel="noopener" class="inline-flex items-center gap-xs bg-on-surface text-surface px-xl py-md rounded-xl font-bold text-lg hover:scale-105 transition-transform">
+        Get Registered <span class="material-symbols-outlined">open_in_new</span>
+      </a>
+    </div>
+
+    <section class="mb-xl">
+      <h2 class="font-headline-lg section-heading mb-md">What You'll Need</h2>
+      <div class="grid sm:grid-cols-2 gap-sm">
+        <div class="bg-white rounded-2xl p-md border border-outline-variant/40 flex gap-sm">
+          <span class="material-symbols-outlined text-primary">phone_iphone</span>
+          <div><p class="font-bold text-sm">Phone Number</p><p class="text-on-surface-variant text-xs">Valid mobile (not landline)</p></div>
+        </div>
+        <div class="bg-white rounded-2xl p-md border border-outline-variant/40 flex gap-sm">
+          <span class="material-symbols-outlined text-primary">home</span>
+          <div><p class="font-bold text-sm">Address Proof</p><p class="text-on-surface-variant text-xs">Passport, DL, ration card, utility bill (JPG)</p></div>
+        </div>
+        <div class="bg-white rounded-2xl p-md border border-outline-variant/40 flex gap-sm">
+          <span class="material-symbols-outlined text-primary">badge</span>
+          <div><p class="font-bold text-sm">Age Proof</p><p class="text-on-surface-variant text-xs">DL, passport, PAN, Aadhaar, birth certificate</p></div>
+        </div>
+        <div class="bg-white rounded-2xl p-md border border-outline-variant/40 flex gap-sm">
+          <span class="material-symbols-outlined text-primary">photo_camera</span>
+          <div><p class="font-bold text-sm">Personal Photo</p><p class="text-on-surface-variant text-xs">JPG format</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-xl">
+      <h2 class="font-headline-lg section-heading mb-md">After You Register</h2>
+      <div class="space-y-sm">
+        <div class="flex gap-md bg-surface-container-low rounded-2xl p-md">
+          <span class="material-symbols-outlined text-secondary">track_changes</span>
+          <div><p class="font-bold text-sm">Track Status</p><p class="text-on-surface-variant text-xs">Use your enrollment number on markyourpresence.org.in</p></div>
+        </div>
+        <div class="flex gap-md bg-surface-container-low rounded-2xl p-md">
+          <span class="material-symbols-outlined text-secondary">how_to_vote</span>
+          <div><p class="font-bold text-sm">Check Electoral Roll</p><p class="text-on-surface-variant text-xs">Verify your name is on the voters list</p></div>
+        </div>
+        <div class="flex gap-md bg-surface-container-low rounded-2xl p-md">
+          <span class="material-symbols-outlined text-secondary">location_on</span>
+          <div><p class="font-bold text-sm">Find Polling Station</p><p class="text-on-surface-variant text-xs">Locate your booth and nearest election office</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="font-headline-lg section-heading mb-md">Voter Guides — Maharashtra</h2>
+      <div class="grid sm:grid-cols-2 gap-sm">
+        <a href="resources.html#guides" class="bg-white rounded-2xl p-md border border-outline-variant/40 hover:border-primary transition-colors flex justify-between items-center group">
+          <span class="font-bold text-sm">MLA Guide</span>
+          <span class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform">arrow_forward</span>
+        </a>
+        <a href="resources.html#guides" class="bg-white rounded-2xl p-md border border-outline-variant/40 hover:border-primary transition-colors flex justify-between items-center group">
+          <span class="font-bold text-sm">MP Guide</span>
+          <span class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform">arrow_forward</span>
+        </a>
+        <a href="resources.html#guides" class="bg-white rounded-2xl p-md border border-outline-variant/40 hover:border-primary transition-colors flex justify-between items-center group">
+          <span class="font-bold text-sm">BMC Guide</span>
+          <span class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform">arrow_forward</span>
+        </a>
+        <a href="resources.html#guides" class="bg-white rounded-2xl p-md border border-outline-variant/40 hover:border-primary transition-colors flex justify-between items-center group">
+          <span class="font-bold text-sm">MLC Guide</span>
+          <span class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform">arrow_forward</span>
+        </a>
+      </div>
+      <p class="text-on-surface-variant text-sm mt-md">New to voting? Read our <a href="know-your-rights.html" class="text-primary underline">Know Your Rights</a> section for eligibility, Article 326, and FAQs.</p>
+    </section>
+  </main>
+
+  <footer class="bg-on-surface py-lg px-container-margin pb-28 md:pb-lg text-center"><p class="text-surface-variant text-sm">© 2024 MYP — Mark Your Presence.</p></footer>
+  <nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around h-16 pb-safe bg-surface/90 backdrop-blur-xl border-t border-outline-variant items-center">
+    <a class="flex flex-col items-center text-on-surface-variant opacity-70" href="index.html"><span class="material-symbols-outlined">home</span></a>
+    <a class="flex flex-col items-center text-on-surface-variant opacity-70" href="know-your-rights.html"><span class="material-symbols-outlined">gavel</span></a>
+    <a class="flex flex-col items-center bg-primary-container text-on-primary-container p-2 rounded-full -translate-y-3 font-bold" href="register.html"><span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1">how_to_vote</span></a>
+    <a class="flex flex-col items-center text-on-surface-variant opacity-70" href="resources.html"><span class="material-symbols-outlined">menu_book</span></a>
+    <a class="flex flex-col items-center text-on-surface-variant opacity-70" href="programs.html"><span class="material-symbols-outlined">bolt</span></a>
+  </nav>
+  <!-- Newsletter popup -->
+  <div id="newsletter-popup" class="newsletter-popup">
+    <button id="newsletter-close" class="absolute top-3 right-3 text-outline hover:text-on-surface transition-colors"><span class="material-symbols-outlined">close</span></button>
+    <span class="material-symbols-outlined text-3xl mb-sm block" style="color:#FFBF25">how_to_vote</span>
+    <h3 class="font-headline-md text-on-surface mb-xs" style="font-size:1.35rem">Ready to Register?</h3>
+    <p class="text-on-surface-variant text-sm mb-md">It only takes 7 minutes online. We'll guide you through the whole process.</p>
+    <a href="https://markyourpresence.org.in" target="_blank" rel="noopener" class="block w-full bg-primary text-on-primary py-sm rounded-xl font-bold text-sm text-center hover:bg-primary-container transition-colors">Register Now →</a>
+  </div>
+
+  <script src="js/app.js"></script>
+  <script>
+    document.querySelector('[href="https://markyourpresence.org.in"]')?.addEventListener('click', () => {
+      MYP.showToast('Opening registration portal…', 'info');
+    });
+  </script>
+</body>
+</html>
