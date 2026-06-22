@@ -14,6 +14,8 @@ const MYP = {
     this.initNewsletterPopup();
     this.initToastContainer();
     this.initStatsCTA();
+    this.initPressWidget();
+    this.initPressPage();
   },
 
   /* ── Election countdown ── */
@@ -176,6 +178,157 @@ const MYP = {
       el.style.cursor = "pointer";
       el.addEventListener("click", () => window.location = el.dataset.statLink);
     });
+  },
+
+  /* ─────────────────────────────────────
+     PRESS CORNER WIDGET (all pages)
+  ───────────────────────────────────── */
+  initPressWidget() {
+    const articles = window.MYP_PRESS;
+    if (!articles?.length || document.getElementById("press-widget")) return;
+
+    const featured = articles.filter(a => a.featured);
+    const tickerItems = featured.length ? featured : articles.slice(0, 6);
+
+    const widget = document.createElement("div");
+    widget.id = "press-widget";
+    widget.className = "press-widget";
+    widget.innerHTML = `
+      <div id="press-panel" class="press-panel" aria-hidden="true">
+        <div class="press-panel-header">
+          <div>
+            <span class="press-diana-badge">🏆 Diana Award</span>
+            <h3 class="press-panel-title">In the Press</h3>
+            <p class="press-panel-sub">${articles.length}+ stories on MYP &amp; Chaitanya Prabhu</p>
+          </div>
+          <button type="button" id="press-panel-close" class="press-panel-close" aria-label="Close">
+            <span class="material-symbols-outlined">close</span>
+          </button>
+        </div>
+        <div class="press-panel-list">
+          ${tickerItems.map(a => `
+            <a href="${a.url}" target="_blank" rel="noopener" class="press-panel-item">
+              <span class="press-panel-outlet">${a.outlet}</span>
+              <span class="press-panel-headline">${a.title}</span>
+              <span class="material-symbols-outlined press-panel-arrow">open_in_new</span>
+            </a>
+          `).join("")}
+        </div>
+        <a href="press.html" class="press-panel-cta">View all coverage →</a>
+      </div>
+      <button type="button" id="press-trigger" class="press-trigger" aria-expanded="false" aria-controls="press-panel">
+        <span class="press-trigger-icon material-symbols-outlined">newspaper</span>
+        <span class="press-trigger-body">
+          <span class="press-trigger-label">In the Press</span>
+          <span class="press-ticker" id="press-ticker"></span>
+        </span>
+        <span class="press-trigger-pulse"></span>
+      </button>
+    `;
+    document.body.appendChild(widget);
+
+    const panel = document.getElementById("press-panel");
+    const trigger = document.getElementById("press-trigger");
+    const closeBtn = document.getElementById("press-panel-close");
+    const ticker = document.getElementById("press-ticker");
+
+    let tickIdx = 0;
+    const showTick = () => {
+      if (!ticker || panel.classList.contains("open")) return;
+      ticker.style.opacity = "0";
+      setTimeout(() => {
+        ticker.textContent = `${tickerItems[tickIdx].outlet}: ${tickerItems[tickIdx].title}`;
+        ticker.style.opacity = "1";
+        tickIdx = (tickIdx + 1) % tickerItems.length;
+      }, 280);
+    };
+    showTick();
+    setInterval(showTick, 4200);
+
+    const open = () => {
+      panel.classList.add("open");
+      panel.setAttribute("aria-hidden", "false");
+      trigger.classList.add("open");
+      trigger.setAttribute("aria-expanded", "true");
+    };
+    const shut = () => {
+      panel.classList.remove("open");
+      panel.setAttribute("aria-hidden", "true");
+      trigger.classList.remove("open");
+      trigger.setAttribute("aria-expanded", "false");
+    };
+
+    trigger.addEventListener("click", () => panel.classList.contains("open") ? shut() : open());
+    closeBtn?.addEventListener("click", shut);
+    document.addEventListener("keydown", e => {
+      if (e.key === "Escape" && panel.classList.contains("open")) shut();
+    });
+
+    if (!sessionStorage.getItem("press-hint")) {
+      setTimeout(() => {
+        trigger.classList.add("hint-bounce");
+        setTimeout(() => trigger.classList.remove("hint-bounce"), 1200);
+        sessionStorage.setItem("press-hint", "1");
+      }, 3500);
+    }
+  },
+
+  /* ── Press page filters ── */
+  initPressPage() {
+    const grid = document.getElementById("press-grid");
+    const preview = document.getElementById("resources-press-preview");
+    if (!window.MYP_PRESS) return;
+
+    const cardHtml = (a) => `
+      <a href="${a.url}" target="_blank" rel="noopener" class="press-card bento-card animate-on-scroll">
+        <div class="press-card-top">
+          <span class="press-card-cat">${window.MYP_PRESS_CATEGORIES[a.category] || a.category}</span>
+          <span class="press-card-year">${a.year}</span>
+        </div>
+        <h3 class="press-card-title card-heading">${a.title}</h3>
+        <p class="press-card-outlet">${a.outlet}</p>
+        <span class="press-card-link">Read article <span class="material-symbols-outlined text-sm">arrow_forward</span></span>
+      </a>
+    `;
+
+    if (grid) {
+      const tabs = document.querySelectorAll("[data-press-filter]");
+      const render = (cat) => {
+        const list = cat === "all" ? window.MYP_PRESS : window.MYP_PRESS.filter(a => a.category === cat);
+        grid.innerHTML = list.map(cardHtml).join("");
+        grid.querySelectorAll(".animate-on-scroll").forEach(el => {
+          requestAnimationFrame(() => el.classList.add("visible"));
+        });
+      };
+      tabs.forEach(tab => {
+        tab.addEventListener("click", () => {
+          tabs.forEach(t => {
+            t.classList.remove("bg-primary", "text-on-primary", "font-bold");
+            t.classList.add("bg-surface-container", "text-on-surface-variant");
+          });
+          tab.classList.add("bg-primary", "text-on-primary", "font-bold");
+          tab.classList.remove("bg-surface-container", "text-on-surface-variant");
+          render(tab.dataset.pressFilter);
+        });
+      });
+      render("all");
+    }
+
+    if (preview) {
+      const featured = window.MYP_PRESS.filter(a => a.featured).slice(0, 6);
+      preview.innerHTML = featured.map(cardHtml).join("");
+      preview.querySelectorAll(".animate-on-scroll").forEach(el => {
+        requestAnimationFrame(() => el.classList.add("visible"));
+      });
+    }
+
+    const marquee = document.getElementById("press-marquee");
+    if (marquee) {
+      const outlets = [...new Set(window.MYP_PRESS.map(a => a.outlet))].slice(0, 14);
+      marquee.innerHTML = outlets.map(o =>
+        `<span class="whitespace-nowrap font-bold text-sm px-md py-xs rounded-full bg-white border border-outline-variant/50" style="color:#B52A1A">${o}</span>`
+      ).join("");
+    }
   },
 };
 
