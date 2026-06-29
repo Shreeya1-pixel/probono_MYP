@@ -275,6 +275,81 @@ h3, .text-headline-md {
 }
 .group:hover .project-img { transform: scale(1.06); }
 
+/* 3-photo strip on project cards */
+.project-img-strip {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3px;
+  background: #EDE5DF;
+}
+.project-img-strip img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+.project-img-strip img:hover {
+  transform: scale(1.08);
+  z-index: 2;
+  position: relative;
+}
+
+/* Campaign gallery (page hero) */
+.campaign-gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  margin-bottom: 48px;
+}
+@media (min-width: 768px) {
+  .campaign-gallery {
+    grid-template-columns: 1.4fr 1fr;
+    grid-template-rows: 200px 200px;
+  }
+  .campaign-gallery .gallery-main {
+    grid-row: span 2;
+    min-height: 412px;
+  }
+}
+.campaign-gallery figure {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  margin: 0;
+}
+.campaign-gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  min-height: 200px;
+  transition: transform 0.6s ease;
+}
+.campaign-gallery figure:hover img { transform: scale(1.05); }
+.campaign-gallery figcaption {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  padding: 14px 16px;
+  background: linear-gradient(transparent, rgba(20,12,8,0.85));
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+/* Modal image gallery */
+.modal-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+  padding: 0 24px 16px;
+}
+.modal-gallery img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
 /* ── Accent badge ── */
 .badge-accent  { background: #FFBF25; color: #1E1E1E; }
 .badge-primary { background: #B52A1A; color: #fff; }

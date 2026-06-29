@@ -65,12 +65,34 @@
 
   <!-- Project grid -->
   <main class="pb-32 md:pb-xl px-container-margin max-w-7xl mx-auto page-content">
+
+    <!-- Campaign photo gallery -->
+    <div class="campaign-gallery animate-on-scroll mb-xl">
+      <figure class="gallery-main">
+        <img src="images/projects/democracy-drive.jpg" alt="Democracy Class Drive — NSS colleges across Mumbai" />
+        <figcaption>Democracy Drive — 56 colleges, 480 volunteers</figcaption>
+      </figure>
+      <figure>
+        <img src="images/projects/gallery-rap-concert.jpg" alt="Rap for Your Rights live performance" />
+        <figcaption>Rap for Your Rights — Khar Social, Mumbai</figcaption>
+      </figure>
+      <figure>
+        <img src="images/projects/gallery-she-votes.jpg" alt="She Votes campaign" />
+        <figcaption>She Votes — women in democracy</figcaption>
+      </figure>
+    </div>
+
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-md">
 
       <!-- 1 Rap for Your Rights -->
       <article class="group bg-surface-container-lowest rounded-3xl overflow-hidden border border-outline-variant/30 shadow-sm bento-card animate-on-scroll" data-modal-open="modal-rap">
         <div class="overflow-hidden">
-          <img class="project-img" src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=600&q=80" alt="Rap for Your Rights" />
+          <img class="project-img" src="images/projects/rap-for-rights.jpg" alt="Rap for Your Rights" />
+          <div class="project-img-strip">
+            <img src="images/projects/rap-for-rights.jpg" alt="Rap performance" />
+            <img src="images/projects/gallery-rap-concert.jpg" alt="Live rap show" />
+            <img src="images/projects/gallery-youth-rally.jpg" alt="Youth rally" />
+          </div>
         </div>
         <div class="p-md">
           <span class="badge-orange inline-block px-3 py-1 rounded-full text-[11px] font-bold uppercase mb-sm">Arts</span>
@@ -83,7 +105,12 @@
       <!-- 2 She Votes -->
       <article class="group bg-surface-container-lowest rounded-3xl overflow-hidden border border-outline-variant/30 shadow-sm bento-card animate-on-scroll" data-modal-open="modal-she-votes">
         <div class="overflow-hidden">
-          <img class="project-img" src="https://images.unsplash.com/photo-1584820927498-cad076eece54?auto=format&fit=crop&w=600&q=80" alt="She Votes" />
+          <img class="project-img" src="images/projects/gallery-she-votes.jpg" alt="She Votes" />
+          <div class="project-img-strip">
+            <img src="images/projects/gallery-she-votes.jpg" alt="She Votes campaign" />
+            <img src="images/projects/gallery-voter-registration.jpg" alt="Women registering to vote" />
+            <img src="images/projects/gallery-youth-rally.jpg" alt="Women at civic rally" />
+          </div>
         </div>
         <div class="p-md">
           <span class="badge-primary inline-block px-3 py-1 rounded-full text-[11px] font-bold uppercase mb-sm">Equality</span>
@@ -96,7 +123,12 @@
       <!-- 3 Dance for Your Rights -->
       <article class="group bg-surface-container-lowest rounded-3xl overflow-hidden border border-outline-variant/30 shadow-sm bento-card animate-on-scroll" data-modal-open="modal-dance">
         <div class="overflow-hidden">
-          <img class="project-img" src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=600&q=80" alt="Dance for Your Rights" />
+          <img class="project-img" src="images/projects/gallery-dance.jpg" alt="Dance for Your Rights" />
+          <div class="project-img-strip">
+            <img src="images/projects/gallery-dance.jpg" alt="Dance performance" />
+            <img src="images/projects/gallery-youth-rally.jpg" alt="Group dance" />
+            <img src="images/projects/gallery-rap-concert.jpg" alt="Performing arts event" />
+          </div>
         </div>
         <div class="p-md">
           <span class="badge-blue inline-block px-3 py-1 rounded-full text-[11px] font-bold uppercase mb-sm">Performing Arts</span>
@@ -107,9 +139,14 @@
       </article>
 
       <!-- 4 Democracy Class / Drive — wide -->
-      <article class="group bg-surface-container-lowest rounded-3xl overflow-hidden border border-outline-variant/30 shadow-sm bento-card sm:col-span-2 animate-on-scroll" data-modal-open="modal-democracy">
+      <article id="democracy-drive" class="group bg-surface-container-lowest rounded-3xl overflow-hidden border border-outline-variant/30 shadow-sm bento-card sm:col-span-2 animate-on-scroll" data-modal-open="modal-democracy">
         <div class="overflow-hidden relative">
-          <img class="project-img aspect-[16/7]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAV91DsBFd-qLhUn4NHy8l1UxcA-8PrMDLjg-yD3eX4Z18yMAQIkEv2Jw5cn_tZ5GAn2O1MN2WWX3qzKWSvTNxHCriSiTvzLjxcYskVPd6vqKVlnm7piRWsoc36XxJLaqoE7M-wUio8oxv55AsS-3V6gkSYQA36MAE2_Zd8TnnDUVnfbwB-yzOi6DzD-RIqeVbvTW5czdBY-2qKKpGIlSzmz5EDNnNQv4JDmtyzIxXdkRjPjuNSvRrNjLR89Nojl1A_309WhsnpVpWS" alt="Democracy Drive" style="aspect-ratio:16/7" />
+          <img class="project-img aspect-[16/7]" src="images/projects/democracy-drive.jpg" alt="Democracy Drive" style="aspect-ratio:16/7" />
+          <div class="project-img-strip">
+            <img src="images/projects/democracy-drive.jpg" alt="Campus registration drive" />
+            <img src="images/projects/gallery-college-drive.jpg" alt="College voter drive" />
+            <img src="images/projects/gallery-campus.jpg" alt="University campus event" />
+          </div>
           <div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 to-transparent flex items-end p-lg">
             <div>
               <span class="badge-accent inline-block px-3 py-1 rounded-full text-[11px] font-bold uppercase mb-sm">Flagship</span>
@@ -123,7 +160,7 @@
       <!-- 5 Art for Your Rights -->
       <article class="group bg-surface-container-lowest rounded-3xl overflow-hidden border border-outline-variant/30 shadow-sm bento-card animate-on-scroll" data-modal-open="modal-art">
         <div class="overflow-hidden">
-          <img class="project-img" src="https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?auto=format&fit=crop&w=600&q=80" alt="Art for Your Rights" />
+          <img class="project-img" src="images/projects/art-for-rights.jpg" alt="Art for Your Rights" />
         </div>
         <div class="p-md">
           <span class="badge-orange inline-block px-3 py-1 rounded-full text-[11px] font-bold uppercase mb-sm">Visual Arts</span>
@@ -162,7 +199,12 @@
       <!-- 8 Podcast -->
       <article class="group bg-surface-container-lowest rounded-3xl overflow-hidden border border-outline-variant/30 shadow-sm bento-card animate-on-scroll" data-modal-open="modal-podcast">
         <div class="overflow-hidden">
-          <img class="project-img" src="https://images.unsplash.com/photo-1478737270197-233a34e78d57?auto=format&fit=crop&w=600&q=80" alt="Podcast" />
+          <img class="project-img" src="images/projects/podcast.jpg" alt="Mark Your Presence Podcast" />
+          <div class="project-img-strip">
+            <img src="images/projects/podcast.jpg" alt="Podcast recording" />
+            <img src="images/projects/podcast-studio.jpg" alt="Studio setup" />
+            <img src="images/projects/podcast-mic.jpg" alt="Microphone" />
+          </div>
         </div>
         <div class="p-md">
           <span class="badge-accent inline-block px-3 py-1 rounded-full text-[11px] font-bold uppercase mb-sm">Podcast</span>
@@ -201,7 +243,7 @@
       <!-- 11 Books for All -->
       <article class="group bg-surface-container-lowest rounded-3xl overflow-hidden border border-outline-variant/30 shadow-sm bento-card animate-on-scroll" data-modal-open="modal-books">
         <div class="overflow-hidden">
-          <img class="project-img" src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&w=600&q=80" alt="Books for All" />
+          <img class="project-img" src="images/projects/books-for-all.jpg" alt="Books for All" />
         </div>
         <div class="p-md">
           <span class="badge-accent inline-block px-3 py-1 rounded-full text-[11px] font-bold uppercase mb-sm">Education</span>
@@ -214,7 +256,7 @@
       <!-- 12 Youth Manifesto / Policy Program -->
       <article class="group bg-surface-container-lowest rounded-3xl overflow-hidden border border-outline-variant/30 shadow-sm bento-card animate-on-scroll" data-modal-open="modal-manifesto">
         <div class="overflow-hidden">
-          <img class="project-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3FUiaEXtWRLTxGPO3iFSNFQDquSSmJZXdceAuEET34jo650RPzdm93MP0zIQ9U50A4l-mvZEJwexiGfYHizbntYzK2mzUlRxl9z6NXIqQ2m28QC8EqCjHt_3ckDvYT6qRUoeSGD5yFLa5nJ5omKqBxHGpwcx4vvGs0OyZ0Wr8CqNDCC-S3ohi1wKf6EsCubmzf3QYG-O-ddEiX3V_tMqrmrhE-TTnBKo_ecJBL2jandrVR7BM0rtvDEhPq3xZKvK9Yc2-Ks8QGGEg" alt="Youth Manifesto" />
+          <img class="project-img" src="images/projects/gallery-youth-manifesto.jpg" alt="Youth Manifesto" />
         </div>
         <div class="p-md">
           <span class="badge-orange inline-block px-3 py-1 rounded-full text-[11px] font-bold uppercase mb-sm">Policy</span>
@@ -227,7 +269,7 @@
       <!-- 13 Raise Your Voice -->
       <article class="group bg-surface-container-lowest rounded-3xl overflow-hidden border border-outline-variant/30 shadow-sm bento-card animate-on-scroll" data-modal-open="modal-raise">
         <div class="overflow-hidden">
-          <img class="project-img" src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=600&q=80" alt="Raise Your Voice" />
+          <img class="project-img" src="images/projects/gallery-youth-rally.jpg" alt="Raise Your Voice" />
         </div>
         <div class="p-md">
           <span class="badge-primary inline-block px-3 py-1 rounded-full text-[11px] font-bold uppercase mb-sm">Advocacy</span>
@@ -240,7 +282,7 @@
       <!-- 14 Run to Register -->
       <article class="group bg-surface-container-lowest rounded-3xl overflow-hidden border border-outline-variant/30 shadow-sm bento-card animate-on-scroll" data-modal-open="modal-run">
         <div class="overflow-hidden">
-          <img class="project-img" src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=600&q=80" alt="Run to Register" />
+          <img class="project-img" src="images/projects/gallery-voter-registration.jpg" alt="Run to Register" />
         </div>
         <div class="p-md">
           <span class="badge-blue inline-block px-3 py-1 rounded-full text-[11px] font-bold uppercase mb-sm">Fitness + Civic</span>
@@ -259,7 +301,12 @@
   <div id="modal-rap" class="modal-backdrop">
     <div class="modal-box">
       <button class="modal-close"><span class="material-symbols-outlined" style="font-size:18px">close</span></button>
-      <img class="modal-img" src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=800&q=80" alt="Rap for Your Rights" />
+      <img class="modal-img" src="images/projects/rap-for-rights.jpg" alt="Rap for Your Rights" />
+      <div class="modal-gallery">
+        <img src="images/projects/rap-for-rights.jpg" alt="Rap for Your Rights" />
+        <img src="images/projects/gallery-rap-concert.jpg" alt="Live performance" />
+        <img src="images/projects/gallery-youth-rally.jpg" alt="Youth rally" />
+      </div>
       <div class="p-lg">
         <span class="badge-orange inline-block px-3 py-1 rounded-full text-[11px] font-bold uppercase mb-sm">Arts</span>
         <h2 class="card-heading mb-md">Rap for Your Rights</h2>
@@ -275,7 +322,12 @@
   <div id="modal-she-votes" class="modal-backdrop">
     <div class="modal-box">
       <button class="modal-close"><span class="material-symbols-outlined" style="font-size:18px">close</span></button>
-      <img class="modal-img" src="https://images.unsplash.com/photo-1584820927498-cad076eece54?auto=format&fit=crop&w=800&q=80" alt="She Votes" />
+      <img class="modal-img" src="images/projects/gallery-she-votes.jpg" alt="She Votes" />
+      <div class="modal-gallery">
+        <img src="images/projects/gallery-she-votes.jpg" alt="She Votes" />
+        <img src="images/projects/gallery-voter-registration.jpg" alt="Voter registration" />
+        <img src="images/projects/gallery-youth-rally.jpg" alt="Civic rally" />
+      </div>
       <div class="p-lg">
         <span class="badge-primary inline-block px-3 py-1 rounded-full text-[11px] font-bold uppercase mb-sm">Equality</span>
         <h2 class="card-heading mb-md">She Votes</h2>
@@ -290,7 +342,12 @@
   <div id="modal-dance" class="modal-backdrop">
     <div class="modal-box">
       <button class="modal-close"><span class="material-symbols-outlined" style="font-size:18px">close</span></button>
-      <img class="modal-img" src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=800&q=80" alt="Dance for Your Rights" />
+      <img class="modal-img" src="images/projects/gallery-dance.jpg" alt="Dance for Your Rights" />
+      <div class="modal-gallery">
+        <img src="images/projects/gallery-dance.jpg" alt="Dance performance" />
+        <img src="images/projects/gallery-youth-rally.jpg" alt="Group performance" />
+        <img src="images/projects/gallery-rap-concert.jpg" alt="Stage event" />
+      </div>
       <div class="p-lg">
         <span class="badge-blue inline-block px-3 py-1 rounded-full text-[11px] font-bold uppercase mb-sm">Performing Arts</span>
         <h2 class="card-heading mb-md">Dance for Your Rights</h2>
@@ -305,7 +362,12 @@
   <div id="modal-democracy" class="modal-backdrop">
     <div class="modal-box">
       <button class="modal-close"><span class="material-symbols-outlined" style="font-size:18px">close</span></button>
-      <img class="modal-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAV91DsBFd-qLhUn4NHy8l1UxcA-8PrMDLjg-yD3eX4Z18yMAQIkEv2Jw5cn_tZ5GAn2O1MN2WWX3qzKWSvTNxHCriSiTvzLjxcYskVPd6vqKVlnm7piRWsoc36XxJLaqoE7M-wUio8oxv55AsS-3V6gkSYQA36MAE2_Zd8TnnDUVnfbwB-yzOi6DzD-RIqeVbvTW5czdBY-2qKKpGIlSzmz5EDNnNQv4JDmtyzIxXdkRjPjuNSvRrNjLR89Nojl1A_309WhsnpVpWS" alt="Democracy Drive" />
+      <img class="modal-img" src="images/projects/democracy-drive.jpg" alt="Democracy Drive" />
+      <div class="modal-gallery">
+        <img src="images/projects/democracy-drive.jpg" alt="Democracy drive" />
+        <img src="images/projects/gallery-college-drive.jpg" alt="College drive" />
+        <img src="images/projects/gallery-campus.jpg" alt="Campus event" />
+      </div>
       <div class="p-lg">
         <span class="badge-accent inline-block px-3 py-1 rounded-full text-[11px] font-bold uppercase mb-sm">Flagship</span>
         <h2 class="card-heading mb-md">Democracy Class / Drive</h2>
@@ -325,7 +387,7 @@
   <div id="modal-art" class="modal-backdrop">
     <div class="modal-box">
       <button class="modal-close"><span class="material-symbols-outlined" style="font-size:18px">close</span></button>
-      <img class="modal-img" src="https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?auto=format&fit=crop&w=800&q=80" alt="Art for Your Rights" />
+      <img class="modal-img" src="images/projects/art-for-rights.jpg" alt="Art for Your Rights" />
       <div class="p-lg">
         <span class="badge-orange inline-block px-3 py-1 rounded-full text-[11px] font-bold uppercase mb-sm">Visual Arts</span>
         <h2 class="card-heading mb-md">Art for Your Rights</h2>
@@ -370,7 +432,12 @@
   <div id="modal-podcast" class="modal-backdrop">
     <div class="modal-box">
       <button class="modal-close"><span class="material-symbols-outlined" style="font-size:18px">close</span></button>
-      <img class="modal-img" src="https://images.unsplash.com/photo-1478737270197-233a34e78d57?auto=format&fit=crop&w=800&q=80" alt="Podcast" />
+      <img class="modal-img" src="images/projects/podcast.jpg" alt="Mark Your Presence Podcast" />
+      <div class="modal-gallery">
+        <img src="images/projects/podcast.jpg" alt="Podcast" />
+        <img src="images/projects/podcast-studio.jpg" alt="Recording studio" />
+        <img src="images/projects/podcast-mic.jpg" alt="Microphone" />
+      </div>
       <div class="p-lg">
         <span class="badge-accent inline-block px-3 py-1 rounded-full text-[11px] font-bold uppercase mb-sm">Podcast · Weekly · Spotify</span>
         <h2 class="card-heading mb-md">Mark Your Presence with Chaitanya Prabhu</h2>
@@ -413,7 +480,7 @@
   <div id="modal-books" class="modal-backdrop">
     <div class="modal-box">
       <button class="modal-close"><span class="material-symbols-outlined" style="font-size:18px">close</span></button>
-      <img class="modal-img" src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&w=800&q=80" alt="Books for All" />
+      <img class="modal-img" src="images/projects/books-for-all.jpg" alt="Books for All" />
       <div class="p-lg">
         <span class="badge-accent inline-block px-3 py-1 rounded-full text-[11px] font-bold uppercase mb-sm">Education</span>
         <h2 class="card-heading mb-md">Books for All</h2>
@@ -428,7 +495,7 @@
   <div id="modal-manifesto" class="modal-backdrop">
     <div class="modal-box">
       <button class="modal-close"><span class="material-symbols-outlined" style="font-size:18px">close</span></button>
-      <img class="modal-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3FUiaEXtWRLTxGPO3iFSNFQDquSSmJZXdceAuEET34jo650RPzdm93MP0zIQ9U50A4l-mvZEJwexiGfYHizbntYzK2mzUlRxl9z6NXIqQ2m28QC8EqCjHt_3ckDvYT6qRUoeSGD5yFLa5nJ5omKqBxHGpwcx4vvGs0OyZ0Wr8CqNDCC-S3ohi1wKf6EsCubmzf3QYG-O-ddEiX3V_tMqrmrhE-TTnBKo_ecJBL2jandrVR7BM0rtvDEhPq3xZKvK9Yc2-Ks8QGGEg" alt="Youth Manifesto" />
+      <img class="modal-img" src="images/projects/gallery-youth-manifesto.jpg" alt="Youth Manifesto" />
       <div class="p-lg">
         <span class="badge-orange inline-block px-3 py-1 rounded-full text-[11px] font-bold uppercase mb-sm">Policy Program</span>
         <h2 class="card-heading mb-md">Youth Manifesto &amp; Policy Program</h2>
@@ -443,7 +510,7 @@
   <div id="modal-raise" class="modal-backdrop">
     <div class="modal-box">
       <button class="modal-close"><span class="material-symbols-outlined" style="font-size:18px">close</span></button>
-      <img class="modal-img" src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=800&q=80" alt="Raise Your Voice" />
+      <img class="modal-img" src="images/projects/gallery-youth-rally.jpg" alt="Raise Your Voice" />
       <div class="p-lg">
         <span class="badge-primary inline-block px-3 py-1 rounded-full text-[11px] font-bold uppercase mb-sm">Advocacy</span>
         <h2 class="card-heading mb-md">Raise Your Voice</h2>
@@ -457,7 +524,7 @@
   <div id="modal-run" class="modal-backdrop">
     <div class="modal-box">
       <button class="modal-close"><span class="material-symbols-outlined" style="font-size:18px">close</span></button>
-      <img class="modal-img" src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=800&q=80" alt="Run to Register" />
+      <img class="modal-img" src="images/projects/gallery-voter-registration.jpg" alt="Run to Register" />
       <div class="p-lg">
         <span class="badge-blue inline-block px-3 py-1 rounded-full text-[11px] font-bold uppercase mb-sm">Fitness + Civic Action</span>
         <h2 class="card-heading mb-md">Run to Register</h2>
