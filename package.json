@@ -1,0 +1,14 @@
+{
+  "name": "mark-your-presence",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Mark Your Presence — youth voter registration & civic engagement website",
+  "license": "UNLICENSED",
+  "scripts": {
+    "build": "node scripts/verify-build.js",
+    "start": "npx --yes serve . -l 3000"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
