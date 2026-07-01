@@ -324,10 +324,20 @@ const MYP = {
 
     const marquee = document.getElementById("press-marquee");
     if (marquee) {
-      const outlets = [...new Set(window.MYP_PRESS.map(a => a.outlet))].slice(0, 14);
-      marquee.innerHTML = outlets.map(o =>
-        `<span class="whitespace-nowrap font-bold text-sm px-md py-xs rounded-full bg-white border border-outline-variant/50" style="color:#B52A1A">${o}</span>`
-      ).join("");
+      const seen = new Set();
+      const picks = [];
+      for (const article of window.MYP_PRESS) {
+        if (seen.has(article.outlet)) continue;
+        seen.add(article.outlet);
+        const fromOutlet = window.MYP_PRESS.filter(a => a.outlet === article.outlet);
+        const best = fromOutlet.find(a => a.featured) || fromOutlet[0];
+        picks.push(best);
+        if (picks.length >= 14) break;
+      }
+      marquee.innerHTML = picks.map(a => {
+        const title = a.title.replace(/"/g, "&quot;");
+        return `<a href="${a.url}" target="_blank" rel="noopener" title="${title}" class="whitespace-nowrap font-bold text-sm px-md py-xs rounded-full bg-white border border-outline-variant/50 hover:border-primary hover:bg-white/90 transition-colors" style="color:#B52A1A">${a.outlet}</a>`;
+      }).join("");
     }
   },
 };
